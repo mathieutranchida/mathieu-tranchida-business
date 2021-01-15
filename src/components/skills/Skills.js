@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-import Schools from "./Schools";
+import WebDevelopment from "./WebDevelopment";
 
-const Bio = () => {
+const Skills = () => {
   return (
     <>
       <Wrapper>
         <Main>
-          <Header>Education</Header>
-          <Schools />
+          <Header>Skills</Header>
+          <WebDevelopment />
         </Main>
       </Wrapper>
     </>
@@ -17,20 +17,21 @@ const Bio = () => {
 };
 
 const Wrapper = styled.div`
-  margin-top: 75px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 const Main = styled.div`
-  max-width: 1250px;
+  max-width: 1030px;
 `;
 
 const Header = styled.h1`
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 10px;
 `;
 
-export default Bio;
+export default Skills;

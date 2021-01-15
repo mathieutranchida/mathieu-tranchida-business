@@ -4,6 +4,8 @@ import styled from "styled-components";
 import IntroBackground from "./introBackground/index";
 import Bio from "./bio/Bio";
 import Education from "./education/Education";
+import Skills from "./skills/Skills";
+import Footer from "./footer/Footer";
 
 const Index = () => {
   return (
@@ -13,7 +15,9 @@ const Index = () => {
         <Main>
           <Bio />
           <Education />
+          <Skills />
         </Main>
+        <Footer />
       </Wrapper>
     </>
   );
