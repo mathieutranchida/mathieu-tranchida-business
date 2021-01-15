@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import IntroBackground from "./introBackground/index";
 import Bio from "./bio/Bio";
+import Education from "./education/Education";
 
 const Index = () => {
   return (
@@ -11,6 +12,7 @@ const Index = () => {
         <IntroBackground />
         <Main>
           <Bio />
+          <Education />
         </Main>
       </Wrapper>
     </>
