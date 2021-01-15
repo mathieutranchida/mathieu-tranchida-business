@@ -1,14 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
-const Home = () => {
+import Intro from "./introBackground/index";
+
+const Index = () => {
   return (
     <>
-      <Wrapper>Hello world</Wrapper>
+      <Wrapper>
+        <Intro />
+      </Wrapper>
     </>
   );
 };
 
 const Wrapper = styled.div``;
 
-export default Home;
+export default Index;

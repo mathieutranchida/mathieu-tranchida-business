@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: montserrat, sans-serif;
     scroll-behavior: smooth;
+    background-color: beige;
     }
 `;
 
