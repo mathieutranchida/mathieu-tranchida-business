@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Schools from "./Schools";
 
-const Education = () => {
+const Bio = () => {
   return (
     <>
       <Wrapper>
@@ -17,7 +17,7 @@ const Education = () => {
 };
 
 const Wrapper = styled.div`
-  margin-top: 50px;
+  margin-top: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,4 +33,4 @@ const Header = styled.h1`
   text-align: center;
 `;
 
-export default Education;
+export default Bio;
