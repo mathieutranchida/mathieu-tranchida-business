@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import WebDevelopment from "./WebDevelopment";
 import ContentCreation from "./ContentCreation";
+import Languages from "./Languages";
 
 const Skills = () => {
   return (
@@ -12,6 +13,7 @@ const Skills = () => {
           <Header>Skills</Header>
           <WebDevelopment />
           <ContentCreation />
+          <Languages />
         </Main>
       </Wrapper>
     </>
