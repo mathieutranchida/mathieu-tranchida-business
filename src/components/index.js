@@ -5,6 +5,7 @@ import IntroBackground from "./introBackground/index";
 import Bio from "./bio/Bio";
 import Education from "./education/Education";
 import Skills from "./skills/Skills";
+import Projects from "./projects/Projects";
 import Footer from "./footer/Footer";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
           <Bio />
           <Education />
           <Skills />
+          <Projects />
         </Main>
         <Footer />
       </Wrapper>
