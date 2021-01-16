@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import WebDevelopment from "./WebDevelopment";
+import ContentCreation from "./ContentCreation";
 
 const Skills = () => {
   return (
@@ -10,6 +11,7 @@ const Skills = () => {
         <Main>
           <Header>Skills</Header>
           <WebDevelopment />
+          <ContentCreation />
         </Main>
       </Wrapper>
     </>
