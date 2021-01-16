@@ -49,8 +49,6 @@ const Schools = () => {
 
 const Wrapper = styled.div`
   margin-top: 35px;
-  max-width: 1030px;
-  width: 100vw;
 `;
 
 const SchoolWrapper = styled.div`
