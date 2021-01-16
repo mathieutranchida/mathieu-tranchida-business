@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import CbFinalProject from "./cbFinalProject/CbFinalProject";
+import VincentAuthier from "./vincentAuthier/VincentAuthier";
 
 const Projects = () => {
   return (
@@ -10,6 +11,7 @@ const Projects = () => {
         <Main>
           <Header>Projects</Header>
           <CbFinalProject />
+          <VincentAuthier />
         </Main>
       </Wrapper>
     </>
