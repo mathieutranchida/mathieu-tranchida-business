@@ -1,13 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
+import ModalDemo from "./ModalDemo";
+
 import { FiChevronRight } from "react-icons/fi";
+
+const title = "E-Commerce Photography Website";
 
 const CbFinalProject = () => {
   return (
     <>
       <Wrapper>
-        <Header>E-Commerce Photography Website</Header>
+        <Header>{title}</Header>
         <Info>
           <InfoStrong>Technologies used:</InfoStrong> React, Javascript, Redux,
           Node.js, CSS, MongoDB, Stripe, Email.js, Cloudinary, Bcrypt, Json Web
@@ -31,17 +35,7 @@ const CbFinalProject = () => {
               }}
             />
           </Link>
-          <OpenDemo>
-            See the demo{" "}
-            <FiChevronRight
-              style={{
-                marginLeft: "3px",
-                height: "14px",
-                width: " 14px",
-                paddingTop: "1px",
-              }}
-            />
-          </OpenDemo>
+          <ModalDemo title={title} />
         </LinkWrapper>
         <DescriptionTitle>Description:</DescriptionTitle>
         <Description>
@@ -85,7 +79,9 @@ const Header = styled.h2`
   margin-bottom: 10px;
 `;
 
-const Info = styled.div``;
+const Info = styled.div`
+  margin-bottom: 2px;
+`;
 
 const InfoStrong = styled.span`
   font-weight: 600;
@@ -96,18 +92,24 @@ const LinkWrapper = styled.div`
 `;
 
 const Link = styled.a`
-  text-decoration: none;
-  color: black;
-  font-style: italic;
-  display: flex;
-  align-items: center;
-`;
-
-const OpenDemo = styled.div`
   font-style: italic;
   margin-top: 2px;
   display: flex;
   align-items: center;
+  width: 170px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 300ms ease-in-out;
+  color: black;
+  text-decoration: none;
+  &:hover {
+    margin-left: 5px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    &:hover {
+      margin-left: 0px;
+    }
+  }
 `;
 
 const DescriptionTitle = styled.div`
