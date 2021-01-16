@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import CbFinalProject from "./cbFinalProject/CbFinalProject";
 import VincentAuthier from "./vincentAuthier/VincentAuthier";
+import CbProjects from "./cbProjects/CbProjects";
 
 const Projects = () => {
   return (
@@ -12,6 +13,7 @@ const Projects = () => {
           <Header>Projects</Header>
           <CbFinalProject />
           <VincentAuthier />
+          <CbProjects />
         </Main>
       </Wrapper>
     </>
