@@ -1,22 +1,46 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 // import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import SmartphoneMenu from "../smartphoneMenu/SmartphoneMenuWhite";
+import SmartphoneMenu from "../smartphoneMenu/SmartphoneMenuBlack";
 
-const TopHeader = () => {
+gsap.registerPlugin(ScrollTrigger);
+
+const ScrollHeader = () => {
   const header = useSelector(
     (state) =>
       state.languageReducer.content && state.languageReducer.content.header
   );
 
+  let headerRef = useRef(null);
+  let scrollTriggerRef = useRef(null);
+
+  useEffect(() => {
+    gsap.to(headerRef, {
+      duration: 0.5,
+      y: "55px",
+      ease: "power3.inOut",
+      scrollTrigger: {
+        trigger: scrollTriggerRef,
+        start: "bottom top",
+        toggleActions: "play none reverse none",
+      },
+    });
+  });
+
   return (
     <>
-      <Wrapper>
+      <Wrapper
+        ref={(e) => {
+          headerRef = e;
+        }}
+      >
         <Nav>
           <Logo
-            src="https://res.cloudinary.com/dldqebddc/image/upload/v1610912523/Business%20website/Logo/mtlogowhite_ics8rx.png"
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1610912523/Business%20website/Logo/mtlogoblack_vmqgts.png"
             alt="Mathieu Tranchida Logo"
           />
           <HeaderMenu>
@@ -32,19 +56,26 @@ const TopHeader = () => {
           </SmartphoneMenuDiv>
         </Nav>
       </Wrapper>
+      <RefScrollTrigger
+        ref={(e) => {
+          scrollTriggerRef = e;
+        }}
+      ></RefScrollTrigger>
     </>
   );
 };
 
 const Wrapper = styled.div`
-  position: absolute;
-  top: 0px;
+  position: fixed;
+  top: -55px;
   left: 0px;
   right: 0px;
   z-index: 1;
   display: flex;
   justify-content: center;
-  margin: 20px 35px 0px 20px;
+  height: 55px;
+  padding: 0px 20px;
+  background-color: white;
 `;
 
 const Nav = styled.nav`
@@ -55,10 +86,8 @@ const Nav = styled.nav`
 `;
 
 const Logo = styled.img`
-  max-height: 70px;
-  max-width: 70px;
-  -webkit-filter: drop-shadow(0px 0px 15px black);
-  filter: drop-shadow(0px 0px 15px black);
+  max-height: 45px;
+  max-width: 45px;
 `;
 
 const HeaderMenu = styled.div`
@@ -69,12 +98,11 @@ const HeaderMenu = styled.div`
 `;
 
 const Link = styled.div`
-  color: white;
+  color: black;
   font-size: 11pt;
   font-weight: 800;
   text-transform: uppercase;
   margin-left: 14px;
-  text-shadow: 0px 0px 15px black;
 `;
 
 const SmartphoneMenuDiv = styled.div`
@@ -83,4 +111,9 @@ const SmartphoneMenuDiv = styled.div`
   }
 `;
 
-export default TopHeader;
+const RefScrollTrigger = styled.div`
+  height: 350px;
+  position: absolute;
+`;
+
+export default ScrollHeader;

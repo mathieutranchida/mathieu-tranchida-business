@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 
 import TopHeader from "./header/topHeader/TopHeader";
+import ScrollHeader from "./header/scrollHeader/ScrollHeader";
 import IntroBackground from "./introBackground/index";
 import Bio from "./bio/Bio";
 import Education from "./education/Education";
@@ -15,6 +16,7 @@ const Index = () => {
     <>
       <Wrapper>
         <TopHeader />
+        <ScrollHeader />
         <IntroBackground />
         <Main>
           <Bio />
