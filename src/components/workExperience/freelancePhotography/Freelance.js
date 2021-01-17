@@ -60,6 +60,9 @@ const Company = styled.h2`
   font-size: 13pt;
   margin-top: 0px;
   margin-bottom: 10px;
+  @media (max-width: 590px) {
+    text-align: center;
+  }
 `;
 
 const JobTitle = styled.h4`
