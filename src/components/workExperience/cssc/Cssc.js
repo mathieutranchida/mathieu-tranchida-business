@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const Cssc = ({ job }) => {
-  console.log(job);
   return (
     <>
       <Wrapper>
