@@ -1,5 +1,13 @@
 // TODO FRENCH TRANSLATION
 const en = {
+  header: {
+    bio: "Bio",
+    education: "Education",
+    skills: "Skills",
+    projects: "Projects",
+    workExperience: "Work Experience",
+    contact: "Contact",
+  },
   bio: {
     mainText:
       "Hello! My name is Mathieu Tranchida, I'm 23 years old and I'm a web developer.",

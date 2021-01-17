@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+import TopHeader from "./header/topHeader/TopHeader";
 import IntroBackground from "./introBackground/index";
 import Bio from "./bio/Bio";
 import Education from "./education/Education";
@@ -13,6 +14,7 @@ const Index = () => {
   return (
     <>
       <Wrapper>
+        <TopHeader />
         <IntroBackground />
         <Main>
           <Bio />
