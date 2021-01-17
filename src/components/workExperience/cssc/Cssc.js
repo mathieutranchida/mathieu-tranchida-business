@@ -29,6 +29,10 @@ const Cssc = ({ job }) => {
 
 const Wrapper = styled.div`
   margin-top: 35px;
+  @media (max-width: 590px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const CompanyWrapper = styled.div`
@@ -36,6 +40,10 @@ const CompanyWrapper = styled.div`
   grid-template-columns: 105px 1fr;
   grid-column-gap: 25px;
   margin-bottom: 15px;
+  @media (max-width: 590px) {
+    grid-template-columns: 1fr;
+    margin-bottom: 0px;
+  }
 `;
 
 const CompanyLogo = styled.img`
@@ -43,6 +51,9 @@ const CompanyLogo = styled.img`
   max-width: 100%;
   max-height: 100%;
   margin-top: 7px;
+  @media (max-width: 590px) {
+    display: none;
+  }
 `;
 
 const Main = styled.div``;
@@ -62,6 +73,8 @@ const JobTitle = styled.h4`
   margin-bottom: 2px;
 `;
 
-const Description = styled.div``;
+const Description = styled.div`
+  text-align: justify;
+`;
 
 export default Cssc;

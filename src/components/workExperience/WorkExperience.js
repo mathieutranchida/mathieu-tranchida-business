@@ -34,9 +34,7 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const Main = styled.div`
-  max-width: 1030px;
-`;
+const Main = styled.div``;
 
 const Header = styled.h1`
   font-weight: 900;
