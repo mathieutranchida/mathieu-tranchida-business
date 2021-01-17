@@ -44,10 +44,7 @@ const VincentAuthier = ({ project }) => {
 };
 
 const Wrapper = styled.div`
-  margin-top: 30px;
-  width: 100vw;
-  max-width: 980px;
-  margin-bottom: 10px;
+  margin: 30px 0px 10px 0px;
 `;
 
 const Header = styled.h2`
@@ -56,6 +53,9 @@ const Header = styled.h2`
   text-transform: uppercase;
   font-weight: 800;
   margin-bottom: 10px;
+  @media (max-width: 590px) {
+    text-align: center;
+  }
 `;
 
 const Info = styled.div`

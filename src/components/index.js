@@ -20,7 +20,7 @@ const Index = () => {
           <Skills />
           <Projects />
           <WorkExperience />
-          <Contact />
+          {/* <Contact /> */}
         </Main>
       </Wrapper>
     </>
@@ -31,6 +31,9 @@ const Wrapper = styled.div``;
 
 const Main = styled.div`
   margin: 0px 50px;
+  @media (max-width: 370px) {
+    margin: 0px 8vw;
+  }
 `;
 
 export default Index;

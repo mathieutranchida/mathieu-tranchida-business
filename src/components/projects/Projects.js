@@ -34,7 +34,7 @@ const Wrapper = styled.div`
 `;
 
 const Main = styled.div`
-  max-width: 1030px;
+  max-width: 980px;
 `;
 
 const Header = styled.h1`
