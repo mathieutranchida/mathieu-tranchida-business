@@ -1,7 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 
 const Schools = () => {
+  const content = useSelector(
+    (state) =>
+      state.languageReducer.content &&
+      state.languageReducer.content.education.schools
+  );
+
   return (
     <>
       <Wrapper>
@@ -11,9 +18,9 @@ const Schools = () => {
             alt="Concordia University Logo"
           />
           <Main>
-            <Program>Diploma in Full-Stack Web Development</Program>
-            <SchoolName>Concordia University / Concordia Bootcamps</SchoolName>
-            <Date>Fall 2020</Date>
+            <Program>{content[0].program}</Program>
+            <SchoolName>{content[0].schoolName}</SchoolName>
+            <Date>{content[0].date}</Date>
           </Main>
         </SchoolWrapper>
         <SchoolWrapper>
@@ -22,12 +29,10 @@ const Schools = () => {
             alt="John Molson School of Business logo"
           />
           <Main>
-            <Program>
-              Bachelor of Commerce - Management & International Business
-            </Program>
-            <SchoolName>Concordia University</SchoolName>
-            <SchoolName>John Molson School of Business</SchoolName>
-            <Date>Fall 2016 - Winter 2020</Date>
+            <Program>{content[1].program}</Program>
+            <SchoolName>{content[1].schoolName[0]}</SchoolName>
+            <SchoolName>{content[1].schoolName[1]}</SchoolName>
+            <Date>{content[1].date}</Date>
           </Main>
         </SchoolWrapper>
         <SchoolWrapper>
@@ -36,10 +41,10 @@ const Schools = () => {
             alt="Lycée Français de Zürich logo"
           />
           <Main>
-            <Program>French Baccalauréat - Economic & Social Studies</Program>
-            <SchoolName>Lycée Français de Zürich</SchoolName>
-            <SchoolName>Honnors: "Très bien"</SchoolName>
-            <Date>Fall 2013 - Summer 2016</Date>
+            <Program>{content[2].program}</Program>
+            <SchoolName>{content[2].schoolName}</SchoolName>
+            <SchoolName>{content[2].honnors}</SchoolName>
+            <Date>{content[2].date}</Date>
           </Main>
         </SchoolWrapper>
       </Wrapper>

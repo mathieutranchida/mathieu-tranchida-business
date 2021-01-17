@@ -5,26 +5,25 @@ import ModalDemo from "./ModalDemo";
 
 import { FiChevronRight } from "react-icons/fi";
 
-const title = "Vincent Authier Website";
-
-const VincentAuthier = () => {
+const VincentAuthier = ({ project }) => {
   return (
     <>
       <Wrapper>
-        <Header>{title}</Header>
+        <Header>{project.title}</Header>
         <Info>
-          <InfoStrong>Technologies used:</InfoStrong> React, Javascript, HTML,
-          CSS, Email.js, GSAP, ScrollTriggers
+          <InfoStrong>{project.techUsedTitle}</InfoStrong>
+          {project.techUsedContent}
         </Info>
         <Info>
-          <InfoStrong>Time frame:</InfoStrong> 7 days
+          <InfoStrong>{project.timeFrameTitle}</InfoStrong>
+          {project.timeFrameContent}
         </Info>
         <LinkWrapper>
           <Link
             href="https://github.com/mathieutranchida/vincent-authier-website"
             target="_blank"
           >
-            See GitHub repository{" "}
+            {project.seeGitHub + " "}
             <FiChevronRight
               style={{
                 marginLeft: "3px",
@@ -34,20 +33,11 @@ const VincentAuthier = () => {
               }}
             />
           </Link>
-          <ModalDemo title={title} />
+          <ModalDemo title={project.title} />
         </LinkWrapper>
-        <DescriptionTitle>Description:</DescriptionTitle>
-        <Description>
-          Created a landing page intended to present Vincent Authier as an
-          athlete and put him in relation with potential sponsors and clients.
-        </Description>
-        <Description>
-          This app is exclusively front-end and heavily based on GSAP and
-          ScrollTriggers animations. The text reveals itself as you scroll down
-          on the website. The website's sides are made of continuous text moving
-          up and down as the user scrolls (animated using GSAP). The gallery is
-          made with a CSS grid and is fully responsive to the smartphone size.
-        </Description>
+        <DescriptionTitle>{project.descriptionTitle}</DescriptionTitle>
+        <Description>{project.description[0]}</Description>
+        <Description>{project.description[1]}</Description>
       </Wrapper>
     </>
   );

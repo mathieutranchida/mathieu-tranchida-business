@@ -24,7 +24,7 @@ const en = {
       {
         program: "French Baccalauréat - Economic & Social Studies",
         schoolName: "Lycée Français de Zürich",
-        schoolNameBis: `Honnors: "Très bien"`,
+        honnors: `Honnors: "Très bien"`,
         date: "Fall 2013 - Summer 2016",
       },
     ],
@@ -160,7 +160,7 @@ const fr = {
       {
         program: "French Baccalauréat - Economic & Social Studies",
         schoolName: "Lycée Français de Zürich",
-        schoolNameBis: `Honnors: "Très bien"`,
+        honnors: `Honnors: "Très bien"`,
         date: "Fall 2013 - Summer 2016",
       },
     ],

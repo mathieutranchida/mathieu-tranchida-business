@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-const ContentCreation = () => {
+const ContentCreation = ({ title }) => {
   return (
     <>
       <Wrapper>
-        <Header>Content Creation</Header>
+        <Header>{title.subtitles.contentCreation}</Header>
         <Main>
           <LogoDiv>
             <Logo

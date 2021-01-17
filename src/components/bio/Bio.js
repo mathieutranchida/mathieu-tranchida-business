@@ -1,22 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 
 const Bio = () => {
+  const content = useSelector(
+    (state) =>
+      state.languageReducer.content && state.languageReducer.content.bio
+  );
+
   return (
     <>
       <Wrapper>
         <Main>
+          <P>{content.mainText}</P>
           <P>
-            Hello! My name is Mathieu Tranchida, I'm 23 years old and I'm a web
-            developer.
-          </P>
-          <P>
-            Originally from France and Switzerland, I moved to Canada to
-            complete my university studies and I am now looking for a full-time
-            opportunity.
+            {content.secondaryText}
             <br />
-            My business, artistic and technical skills make me a unique and
-            versatile prospect for your projects.
+            {content.secondaryTextReturn}
           </P>
         </Main>
       </Wrapper>

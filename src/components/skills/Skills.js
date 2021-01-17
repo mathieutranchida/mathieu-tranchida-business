@@ -1,19 +1,25 @@
 import React from "react";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 
 import WebDevelopment from "./WebDevelopment";
 import ContentCreation from "./ContentCreation";
 import Languages from "./Languages";
 
 const Skills = () => {
+  const title = useSelector(
+    (state) =>
+      state.languageReducer.content && state.languageReducer.content.skills
+  );
+
   return (
     <>
       <Wrapper>
         <Main>
-          <Header>Skills</Header>
-          <WebDevelopment />
-          <ContentCreation />
-          <Languages />
+          <Header>{title.title}</Header>
+          <WebDevelopment title={title} />
+          <ContentCreation title={title} />
+          <Languages title={title} />
         </Main>
       </Wrapper>
     </>

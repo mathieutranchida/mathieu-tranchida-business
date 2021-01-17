@@ -1,19 +1,25 @@
 import React from "react";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 
 import CbFinalProject from "./cbFinalProject/CbFinalProject";
 import VincentAuthier from "./vincentAuthier/VincentAuthier";
 import CbProjects from "./cbProjects/CbProjects";
 
 const Projects = () => {
+  const projects = useSelector(
+    (state) =>
+      state.languageReducer.content && state.languageReducer.content.projects
+  );
+
   return (
     <>
       <Wrapper>
         <Main>
-          <Header>Projects</Header>
-          <CbFinalProject />
-          <VincentAuthier />
-          <CbProjects />
+          <Header>{projects.title}</Header>
+          <CbFinalProject project={projects.projects[0]} />
+          <VincentAuthier project={projects.projects[1]} />
+          <CbProjects project={projects.projects[2]} />
         </Main>
       </Wrapper>
     </>

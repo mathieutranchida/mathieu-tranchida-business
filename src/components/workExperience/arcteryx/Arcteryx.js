@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Arcteryx = () => {
+const Arcteryx = ({ job }) => {
   return (
     <>
       <Wrapper>
@@ -11,29 +11,15 @@ const Arcteryx = () => {
             alt="Arc'teryx"
           />
           <Main>
-            <Company>Arc'teryx Montréal</Company>
-            <JobTitle>
-              Content Creator | 2017 - 2020 | Montreal, Canada
-            </JobTitle>
-            <Description>
-              Produced content for social media and marketing campaigns
-            </Description>
-            <Description>
-              Established a creative direction aligned with the brand image
-            </Description>
-            <JobTitleSecond>
-              Sales assistant | 2017 - 2019 | Montreal, Canada
-            </JobTitleSecond>
-            <Description>
-              Developed extensive knowledge of outdoor technical clothing
-            </Description>
-            <Description>
-              Understood client needs and offered appropriate solutions
-            </Description>
-            <Description>Use of “Meerkat” selling technique</Description>
-            <Description>
-              Developed teamwork, punctuality and adaptation skills
-            </Description>
+            <Company>{job.company}</Company>
+            <JobTitle>{job.jobs[0].jobTitle}</JobTitle>
+            <Description>{job.jobs[0].description[0]}</Description>
+            <Description>{job.jobs[0].description[1]}</Description>
+            <JobTitleSecond>{job.jobs[1].jobTitle}</JobTitleSecond>
+            <Description>{job.jobs[1].description[0]}</Description>
+            <Description>{job.jobs[1].description[1]}</Description>
+            <Description>{job.jobs[1].description[3]} </Description>
+            <Description>{job.jobs[1].description[2]}</Description>
           </Main>
         </CompanyWrapper>
       </Wrapper>

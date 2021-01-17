@@ -3,20 +3,18 @@ import styled from "styled-components";
 
 import { FiChevronRight } from "react-icons/fi";
 
-const title = "Concordia Bootcamps' Projects";
-
-const CbProjects = () => {
+const CbProjects = ({ project }) => {
   return (
     <>
       <Wrapper>
-        <Header>{title}</Header>
+        <Header>{project.title}</Header>
         <Info>
-          <InfoStrong>Technologies used:</InfoStrong> React, Redux, JavaScript,
-          CSS, HTML, Node.js, MongoDB, GitHub, & more
+          <InfoStrong>{project.techUsedTitle}</InfoStrong>
+          {project.techUsedContent}
         </Info>
         <LinkWrapper>
           <Link href="https://github.com/mathieutranchida" target="_blank">
-            See my GitHub for more information{" "}
+            {project.seeGitHub + " "}
             <FiChevronRight
               style={{
                 marginLeft: "3px",
@@ -27,14 +25,8 @@ const CbProjects = () => {
             />
           </Link>
         </LinkWrapper>
-        <DescriptionTitle>Description:</DescriptionTitle>
-        <Description>
-          While completing my diploma at Concordia Bootcamps, I worked on
-          multiple solo projects, as well as one team project. Those projects
-          include a Twitter clone (Frontend | Solo), a Flight booking app
-          (Frontend & Backend | Solo), a Javascript game (Frontend | Solo) and
-          an e-commerce web app (Frontend & Backend | Team of 3).
-        </Description>
+        <DescriptionTitle>{project.descriptionTitle}</DescriptionTitle>
+        <Description>{project.description[0]}</Description>
       </Wrapper>
     </>
   );

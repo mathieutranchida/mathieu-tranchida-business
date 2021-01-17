@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const FreelancePhotography = () => {
+const FreelancePhotography = ({ job }) => {
   return (
     <>
       <Wrapper>
@@ -11,22 +11,11 @@ const FreelancePhotography = () => {
             alt="Freelance photography at Mathieu Tranchida"
           />
           <Main>
-            <Company>Freelance photographer</Company>
-            <JobTitle>
-              Photographer | 2017 - 2021 | Canada & Switzerland
-            </JobTitle>
-            <Description>
-              Mainly working on commercial and editorial projects related to
-              extreme sports
-            </Description>
-            <Description>
-              Client roaster include: Arc’teryx, 686, Allez-Up, Jackalope,
-              Psicobloc and If3
-            </Description>
-            <Description>
-              Published in: L’Équipe, Skipass, Gripped Magazine, The Ski
-              Journal, and Downdays
-            </Description>
+            <Company>{job.company}</Company>
+            <JobTitle>{job.jobTitle}</JobTitle>
+            <Description>{job.description[0]}</Description>
+            <Description>{job.description[1]}</Description>
+            <Description>{job.description[2]}</Description>
           </Main>
         </CompanyWrapper>
       </Wrapper>

@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-const WebDevelopment = () => {
+const WebDevelopment = ({ title }) => {
   return (
     <>
       <Wrapper>
-        <Header>Web Development</Header>
+        <Header>{title.subtitles.webDevelopment}</Header>
         <Main>
           <LogoDiv>
             <Logo

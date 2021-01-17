@@ -5,27 +5,25 @@ import ModalDemo from "./ModalDemo";
 
 import { FiChevronRight } from "react-icons/fi";
 
-const title = "E-Commerce Photography Website";
-
-const CbFinalProject = () => {
+const CbFinalProject = ({ project }) => {
   return (
     <>
       <Wrapper>
-        <Header>{title}</Header>
+        <Header>{project.title}</Header>
         <Info>
-          <InfoStrong>Technologies used:</InfoStrong> React, Javascript, Redux,
-          Node.js, CSS, MongoDB, Stripe, Email.js, Cloudinary, Bcrypt, Json Web
-          Tokens
+          <InfoStrong>{project.techUsedTitle}</InfoStrong>
+          {project.techUsedContent}
         </Info>
         <Info>
-          <InfoStrong>Time frame:</InfoStrong> 14 days
+          <InfoStrong>{project.timeFrameTitle}</InfoStrong>
+          {project.timeFrameContent}
         </Info>
         <LinkWrapper>
           <Link
             href="https://github.com/mathieutranchida/Mathieu-Tranchida-Website"
             target="_blank"
           >
-            See GitHub repository{" "}
+            {project.seeGitHub + " "}
             <FiChevronRight
               style={{
                 marginLeft: "3px",
@@ -35,30 +33,12 @@ const CbFinalProject = () => {
               }}
             />
           </Link>
-          <ModalDemo title={title} />
+          <ModalDemo title={project.title} />
         </LinkWrapper>
-        <DescriptionTitle>Description:</DescriptionTitle>
-        <Description>
-          Created a fully responsive e-commerce application with a functioning
-          store, cart, payment, order confirmation, and admin portal features.
-        </Description>
-        <Description>
-          The store offers a variety of images that can be bought in different
-          sizes and types of paper. Each cart is saved on a MongoDB database and
-          can be retrieved using a unique ID assigned to each user's local
-          storage. The payment system was created using Stripe. On payment, the
-          user is redirected to the order confirmation page if the payment
-          succeeds or to an error page if the payment fails.
-        </Description>
-        <Description>
-          The admin portal gives the admin the possibility to create, update,
-          and delete products. The portal is protected with a login portal that
-          uses Bcrypt and Json Web Token to secure the user's authentication. If
-          logged out, the admin can't access protected routes and perform
-          protected actions. While logged in, the user can see every order made
-          to the website and modify their status (received, processing,
-          fulfilled, etc.).
-        </Description>
+        <DescriptionTitle>{project.descriptionTitle}</DescriptionTitle>
+        <Description>{project.description[0]}</Description>
+        <Description>{project.description[1]}</Description>
+        <Description>{project.description[2]}</Description>
       </Wrapper>
     </>
   );

@@ -1,14 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 
 import Schools from "./Schools";
 
 const Education = () => {
+  const header = useSelector(
+    (state) =>
+      state.languageReducer.content &&
+      state.languageReducer.content.education.title
+  );
+
   return (
     <>
       <Wrapper>
         <Main>
-          <Header>Education</Header>
+          <Header>{header}</Header>
           <Schools />
         </Main>
       </Wrapper>

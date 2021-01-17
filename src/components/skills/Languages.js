@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-const Languages = () => {
+const Languages = ({ title }) => {
   return (
     <>
       <Wrapper>
-        <Header>Languages</Header>
+        <Header>{title.subtitles.language}</Header>
         <Main>
           <LogoDiv>
             <Logo

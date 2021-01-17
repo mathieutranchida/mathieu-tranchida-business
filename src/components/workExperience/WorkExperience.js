@@ -1,19 +1,26 @@
 import React from "react";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 
 import FreelancePhotography from "./freelancePhotography/Freelance";
 import Arcteryx from "./arcteryx/Arcteryx";
 import Cssc from "./cssc/Cssc";
 
 const WorkExperience = () => {
+  const work = useSelector(
+    (state) =>
+      state.languageReducer.content &&
+      state.languageReducer.content.workExperience
+  );
+
   return (
     <>
       <Wrapper>
         <Main>
-          <Header>Work Experience</Header>
-          <FreelancePhotography />
-          <Arcteryx />
-          <Cssc />
+          <Header>{work.title}</Header>
+          <FreelancePhotography job={work.jobs[0]} />
+          <Arcteryx job={work.jobs[1]} />
+          <Cssc job={work.jobs[2]} />
         </Main>
       </Wrapper>
     </>

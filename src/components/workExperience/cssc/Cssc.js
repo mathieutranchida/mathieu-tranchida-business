@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-const Cssc = () => {
+const Cssc = ({ job }) => {
+  console.log(job);
   return (
     <>
       <Wrapper>
@@ -11,32 +12,15 @@ const Cssc = () => {
             alt="Freelance photography at Mathieu Tranchida"
           />
           <Main>
-            <Company>Concordia Ski & Snowboard Club</Company>
-            <JobTitle>President | 2018 - 2019 | Montreal, Canada</JobTitle>
-            <Description>
-              Run one of the most active clubs on campus with more than 500
-              active members
-            </Description>
-            <Description>
-              Planned and run over 20 yearly events including 10-day trips and
-              two weekenders
-            </Description>
-            <Description>
-              Managed a team of six executive - Developed leadership and
-              teamwork skills
-            </Description>
-            <Description>
-              Worked with external companies such as Red Bull and Orage
-            </Description>
-            <Description>
-              Generated over $90,000 in sales throughout the year
-            </Description>
-            <Description>
-              Oversaw the finance and marketing of the club
-            </Description>
-            <Description>
-              Collaborated with other school associations
-            </Description>
+            <Company>{job.company}</Company>
+            <JobTitle>{job.jobTitle}</JobTitle>
+            <Description>{job.description[0]}</Description>
+            <Description>{job.description[1]}</Description>
+            <Description>{job.description[2]}</Description>
+            <Description>{job.description[3]} </Description>
+            <Description>{job.description[4]} </Description>
+            <Description>{job.description[5]} </Description>
+            <Description>{job.description[6]} </Description>
           </Main>
         </CompanyWrapper>
       </Wrapper>
