@@ -95,7 +95,7 @@ const Contact = ({ contact }) => {
         <Button
           type="submit"
           value={contact.send}
-          disabled={!name || !email || !message}
+          disabled={!name || !email.includes("@") || !message}
         />
       </Form>
     </>
@@ -103,6 +103,7 @@ const Contact = ({ contact }) => {
 };
 
 const Form = styled.form`
+  max-width: 500px;
   width: 100%;
   margin-top: 15px;
 `;
