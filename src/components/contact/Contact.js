@@ -70,9 +70,7 @@ const Contact = () => {
             </Footer>
           </Div>
           <Div>
-            <Copyright>
-              Mathieu Tranchida - 2021 All rights Reserved ©
-            </Copyright>
+            <Copyright>{contact.copyright}</Copyright>
           </Div>
         </Main>
       </Wrapper>

@@ -142,6 +142,7 @@ const initialState = {
       email: "email",
       name: "name",
       message: "message",
+      copyright: "Mathieu Tranchida - 2021 All rights Reserved ©",
     },
   },
   status: "en",
