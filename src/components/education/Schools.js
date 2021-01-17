@@ -53,7 +53,11 @@ const Schools = () => {
 };
 
 const Wrapper = styled.div`
-  margin-top: 35px;
+  margin: 35px auto 0px auto;
+  @media (max-width: 590px) {
+    grid-template-columns: 1fr;
+    margin: 25px auto 0px auto;
+  }
 `;
 
 const SchoolWrapper = styled.div`
@@ -61,6 +65,10 @@ const SchoolWrapper = styled.div`
   grid-template-columns: 150px 1fr;
   grid-column-gap: 25px;
   margin-bottom: 30px;
+  @media (max-width: 590px) {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
 `;
 
 const SchoolLogo = styled.img`
@@ -68,6 +76,11 @@ const SchoolLogo = styled.img`
   max-width: 100%;
   max-height: 100%;
   margin-top: 7px;
+  @media (max-width: 590px) {
+    max-width: 175px;
+    max-height: 55px;
+    margin: 0px auto 13px auto;
+  }
 `;
 
 const Main = styled.div``;
@@ -78,6 +91,9 @@ const Program = styled.h2`
   font-size: 13pt;
   margin-top: 0px;
   margin-bottom: 10px;
+  @media (max-width: 590px) {
+    text-align: center;
+  }
 `;
 
 const SchoolName = styled.h4`
@@ -85,11 +101,17 @@ const SchoolName = styled.h4`
   font-weight: 600;
   margin-top: 0px;
   margin-bottom: 2px;
+  @media (max-width: 590px) {
+    text-align: center;
+  }
 `;
 
 const Date = styled.div`
   font-style: italic;
   font-weight: 300;
+  @media (max-width: 590px) {
+    text-align: center;
+  }
 `;
 
 export default Schools;
