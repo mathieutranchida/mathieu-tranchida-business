@@ -2,9 +2,9 @@ export const requestNewLanguage = () => ({
   type: "REQUEST_NEW_LANGUAGE",
 });
 
-export const receiveNewLanguage = (data) => ({
+export const receiveNewLanguage = (content) => ({
   type: "RECEIVE_NEW_LANGUAGE",
-  data,
+  content,
 });
 
 export const receiveNewLanguageError = () => ({

@@ -35,7 +35,7 @@ const CompanyWrapper = styled.div`
   display: grid;
   grid-template-columns: 105px 1fr;
   grid-column-gap: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 `;
 
 const CompanyLogo = styled.img`

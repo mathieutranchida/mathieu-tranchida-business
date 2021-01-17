@@ -135,6 +135,14 @@ const initialState = {
         },
       ],
     },
+    contact: {
+      title: "Contact",
+      description:
+        "Feel free to contact me through the message box bellow or through my social media accounts (listed bellow)",
+      email: "email",
+      name: "name",
+      message: "message",
+    },
   },
   status: "en",
 };

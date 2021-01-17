@@ -7,6 +7,7 @@ import Education from "./education/Education";
 import Skills from "./skills/Skills";
 import Projects from "./projects/Projects";
 import WorkExperience from "./workExperience/WorkExperience";
+import Contact from "./contact/Contact";
 import Footer from "./footer/Footer";
 
 const Index = () => {
@@ -20,6 +21,7 @@ const Index = () => {
           <Skills />
           <Projects />
           <WorkExperience />
+          <Contact />
         </Main>
         <Footer />
       </Wrapper>
