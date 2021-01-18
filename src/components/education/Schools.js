@@ -12,7 +12,12 @@ const Schools = () => {
   return (
     <>
       <Wrapper>
-        <SchoolWrapper>
+        <SchoolWrapper
+          href="https://concordiabootcamps.ca/"
+          aria-label="Link towards Concordia Bootcamps website / Lien vers Concordia Bootcamps site internet"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <SchoolLogo
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1610748222/Business website/Logo/Université_Concordia__logo_.svg__woaohu.png"
             alt="Concordia University Logo"
@@ -21,9 +26,15 @@ const Schools = () => {
             <Program>{content[0].program}</Program>
             <SchoolName>{content[0].schoolName}</SchoolName>
             <Date>{content[0].date}</Date>
+            <Date>Montréal, Canada</Date>
           </Main>
         </SchoolWrapper>
-        <SchoolWrapper>
+        <SchoolWrapper
+          href="https://www.concordia.ca/jmsb.html"
+          aria-label="Link towards John Molson School of Business website / Lien vers John Molson School of Business site internet"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <SchoolLogo
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1610749899/Business%20website/Logo/JMSB-1030x579_u8ds9b.png"
             alt="John Molson School of Business logo"
@@ -33,9 +44,15 @@ const Schools = () => {
             <SchoolName>{content[1].schoolName[0]}</SchoolName>
             <SchoolName>{content[1].schoolName[1]}</SchoolName>
             <Date>{content[1].date}</Date>
+            <Date>Montréal, Canada</Date>
           </Main>
         </SchoolWrapper>
-        <SchoolWrapper>
+        <SchoolWrapper
+          href="https://lfz.ch/"
+          aria-label="Link towards Lycée Français de Zurich website / Lien vers Lycée Français de Zurich site internet"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <SchoolLogo
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1610750373/Business website/Logo/cropped-new-logo-lfz_ywtooo.png"
             alt="Lycée Français de Zürich logo"
@@ -45,6 +62,7 @@ const Schools = () => {
             <SchoolName>{content[2].schoolName}</SchoolName>
             <SchoolName>{content[2].honnors}</SchoolName>
             <Date>{content[2].date}</Date>
+            <Date>Zürich, Switzerland</Date>
           </Main>
         </SchoolWrapper>
       </Wrapper>
@@ -60,11 +78,13 @@ const Wrapper = styled.div`
   }
 `;
 
-const SchoolWrapper = styled.div`
+const SchoolWrapper = styled.a`
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 125px 1fr;
   grid-column-gap: 25px;
   margin-bottom: 30px;
+  text-decoration: none;
+  color: black;
   @media (max-width: 590px) {
     grid-template-columns: 1fr;
     margin-bottom: 40px;
