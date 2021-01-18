@@ -78,8 +78,8 @@ const Wrapper = styled.div``;
 
 const Main = styled.div`
   margin: 0px 50px;
-  @media (max-width: 370px) {
-    margin: 0px 8vw;
+  @media (max-width: 600px) {
+    margin: 0px 7.5vw;
   }
 `;
 
