@@ -16,10 +16,6 @@ const Cssc = ({ job }) => {
             <Description>{job.description[0]}</Description>
             <Description>{job.description[1]}</Description>
             <Description>{job.description[2]}</Description>
-            <Description>{job.description[3]} </Description>
-            <Description>{job.description[4]} </Description>
-            <Description>{job.description[5]} </Description>
-            <Description>{job.description[6]} </Description>
           </Main>
         </CompanyWrapper>
       </Wrapper>
@@ -28,18 +24,17 @@ const Cssc = ({ job }) => {
 };
 
 const Wrapper = styled.div`
-  margin-top: 35px;
-  @media (max-width: 590px) {
-    display: flex;
-    justify-content: center;
-  }
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
 `;
 
 const CompanyWrapper = styled.div`
   display: grid;
-  grid-template-columns: 105px 1fr;
+  grid-template-columns: 75px 1fr;
   grid-column-gap: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
+  max-width: 980px;
   @media (max-width: 590px) {
     grid-template-columns: 1fr;
     margin-bottom: 0px;
@@ -74,10 +69,15 @@ const JobTitle = styled.h4`
   font-weight: 600;
   margin-top: 0px;
   margin-bottom: 2px;
+  @media (max-width: 590px) {
+    text-align: center;
+  }
 `;
 
 const Description = styled.div`
   text-align: justify;
+  margin-bottom: 3px;
+  text-indent: 25px;
 `;
 
 export default Cssc;

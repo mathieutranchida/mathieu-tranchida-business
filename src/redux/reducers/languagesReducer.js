@@ -100,7 +100,7 @@ const initialState = {
       jobs: [
         {
           company: "Freelance photographer",
-          jobTitle: "Photographer | 2017 - NOW | Canada & Switzerland",
+          jobTitle: "Photographer | 2017 - Now | Canada & Switzerland",
           description: [
             "I've been working as a freelance photographer for four years on the side of my studies and other activities. While it started as a passion, it gave me the opportunity to work with global companies and some of the best athletes in the world.",
             `In that time, I mainly commercial and editorial projects. My client roaster includes Arc'teryx, Allez-Up, Jackalope, Psicobloc, iF3, and 686. I have also been published in L'Équipe, Skipass, Gripped Magazine, The Ski Journal, and Downdays. Key takeaways from this experience are my ability to take calculated risks, perform well under pressure, and high standards for what I consider "good work". See my portfolio in the "Portfolio" section.`,

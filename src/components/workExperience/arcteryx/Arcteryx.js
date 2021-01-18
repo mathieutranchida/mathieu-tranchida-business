@@ -17,9 +17,6 @@ const Arcteryx = ({ job }) => {
             <Description>{job.jobs[0].description[1]}</Description>
             <JobTitleSecond>{job.jobs[1].jobTitle}</JobTitleSecond>
             <Description>{job.jobs[1].description[0]}</Description>
-            <Description>{job.jobs[1].description[1]}</Description>
-            <Description>{job.jobs[1].description[3]} </Description>
-            <Description>{job.jobs[1].description[2]}</Description>
           </Main>
         </CompanyWrapper>
       </Wrapper>
@@ -28,14 +25,17 @@ const Arcteryx = ({ job }) => {
 };
 
 const Wrapper = styled.div`
-  margin-top: 35px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
 `;
 
 const CompanyWrapper = styled.div`
   display: grid;
-  grid-template-columns: 105px 1fr;
+  grid-template-columns: 75px 1fr;
   grid-column-gap: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+  max-width: 980px;
   @media (max-width: 590px) {
     grid-template-columns: 1fr;
     margin-bottom: 0px;
@@ -70,6 +70,15 @@ const JobTitle = styled.h4`
   font-weight: 600;
   margin-top: 0px;
   margin-bottom: 2px;
+  @media (max-width: 590px) {
+    text-align: center;
+  }
+`;
+
+const Description = styled.div`
+  text-align: justify;
+  margin-bottom: 3px;
+  text-indent: 25px;
 `;
 
 const JobTitleSecond = styled.h4`
@@ -77,10 +86,9 @@ const JobTitleSecond = styled.h4`
   font-weight: 600;
   margin-top: 8px;
   margin-bottom: 2px;
-`;
-
-const Description = styled.div`
-  text-align: justify;
+  @media (max-width: 590px) {
+    text-align: center;
+  }
 `;
 
 export default Arcteryx;
