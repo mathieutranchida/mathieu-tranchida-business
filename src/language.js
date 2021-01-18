@@ -97,11 +97,10 @@ const en = {
     jobs: [
       {
         company: "Freelance photographer",
-        jobTitle: "Photographer | 2017 - 2021 | Canada & Switzerland",
+        jobTitle: "Photographer | 2017 - NOW | Canada & Switzerland",
         description: [
-          "Mainly working on commercial and editorial projects related to extreme sports",
-          "Client roaster include: Arc’teryx, 686, Allez-Up, Jackalope, Psicobloc and If3",
-          "Published in: L’Équipe, Skipass, Gripped Magazine, The Ski Journal, and Downdays",
+          "I've been working as a freelance photographer for four years on the side of my studies and other activities. While it started as a passion, it gave me the opportunity to work with global companies and some of the best athletes in the world.",
+          `In that time, I mainly commercial and editorial projects. My client roaster includes Arc'teryx, Allez-Up, Jackalope, Psicobloc, iF3, and 686. I have also been published in L'Équipe, Skipass, Gripped Magazine, The Ski Journal, and Downdays. Key takeaways from this experience are my ability to take calculated risks, perform well under pressure, and high standards for what I consider "good work". See my portfolio in the "Portfolio" section.`,
         ],
       },
       {
@@ -110,32 +109,25 @@ const en = {
           {
             jobTitle: "Content Creator | 2017 - 2020 | Montreal, Canada",
             description: [
-              "Produced content for social media and marketing campaigns",
-              "Established a creative direction aligned with the brand image",
+              "My role as a Content Creator for Arc'teryx Montreal store included the following responsibilities: Produce content for social media and marketing campaigns, Establish a creative direction aligned with the brand image.",
+              "The type of media I produced for the marketing of the store included: photos, videos, and designs. Key takeaways from this experience are attention to detail and produce content in line with a brand image.",
             ],
           },
           {
             jobTitle: "Sales assistant | 2017 - 2019 | Montreal, Canada",
             description: [
-              "Developed extensive knowledge of outdoor technical clothing",
-              "Understood client needs and offered appropriate solutions",
-              `Use of “Meerkat” selling technique`,
-              "Developed teamwork, punctuality and adaptation skills",
+              `While working as a Sales Assistant at Arc'teryx Montreal, I developed an extensive knowledge of the outdoor industry and outdoor technical clothing. I also learned to understand clients' needs and offered appropriate solutions. Extensive use of "Meerkat" selling technique. Teamwork, punctuality, and adaptation skills have been key takeaways of this experience.`,
             ],
           },
         ],
       },
       {
         company: "Concordia Ski & Snowboard Club",
-        jobTitle: "President | 2018 - 2019 | Montreal, Canada",
+        jobTitle: "President & VP Marketing | 2017 - 2019 | Montreal, Canada",
         description: [
-          "Run one of the most active clubs on campus with more than 500 active members",
-          "Planned and run over 20 yearly events including 10-day trips and two weekenders",
-          "Managed a team of six executive - Developed leadership and teamwork skills",
-          "Worked with external companies such as Red Bull and Orage",
-          "Generated over $90,000 in sales throughout the year",
-          "Oversaw the finance and marketing of the club",
-          "Collaborated with other school associations",
+          "The Concordia Ski & Snowboard Club is one of the most active clubs on campus with more than 500 active members and +20 events every year.",
+          "I joined the club in 2017 as the VP of Marketing. My role was to come up with marketing strategies to sell tickets and produce the content for each trip.",
+          "After a year in the position of VP Marketing, I was elected President of the club. My responsibilities included managing a team of six executives, overseeing finances, marketing, operations, and sponsorships. In the 18/19 season, along with my team, I planned and ran over 20 events, including 10-day trips and two weekenders, generating over $90,000 in sales revenue. We worked with external companies and sponsors such as Reb Bull and Orage. Leadership and teamwork are key takeaways from this experience.",
         ],
       },
     ],
