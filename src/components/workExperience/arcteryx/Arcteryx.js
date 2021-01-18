@@ -84,7 +84,7 @@ const Description = styled.div`
 const JobTitleSecond = styled.h4`
   font-size: 10pt;
   font-weight: 600;
-  margin-top: 8px;
+  margin-top: 10px;
   margin-bottom: 2px;
   @media (max-width: 590px) {
     text-align: center;
