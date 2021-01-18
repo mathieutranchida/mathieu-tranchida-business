@@ -1,0 +1,9 @@
+.navLinkTop {
+  color: white;
+  font-size: 11pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-left: 14px;
+  text-shadow: 0px 0px 15px black;
+  cursor: pointer;
+}

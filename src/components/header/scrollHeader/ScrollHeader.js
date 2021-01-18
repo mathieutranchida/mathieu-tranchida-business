@@ -4,7 +4,9 @@ import styled from "styled-components";
 import { useSelector } from "react-redux";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link, animateScroll as scroll } from "react-scroll";
 
+import "./scrollHeader.css";
 import SmartphoneMenu from "../smartphoneMenu/SmartphoneMenuBlack";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -42,14 +44,77 @@ const ScrollHeader = () => {
           <Logo
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1610912523/Business%20website/Logo/mtlogoblack_vmqgts.png"
             alt="Mathieu Tranchida Logo"
+            onClick={() => {
+              scroll.scrollToTop();
+            }}
           />
           <HeaderMenu>
-            <Link>{header.bio}</Link>
-            <Link>{header.education}</Link>
-            <Link>{header.skills}</Link>
-            <Link>{header.projects}</Link>
-            <Link>{header.workExperience}</Link>
-            <Link>{header.contact}</Link>
+            <Link
+              activeClass="active"
+              to="section1"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="navLinkScroll"
+            >
+              {header.bio}
+            </Link>
+            <Link
+              activeClass="active"
+              to="section2"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="navLinkScroll"
+            >
+              {header.education}
+            </Link>
+            <Link
+              activeClass="active"
+              to="section3"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="navLinkScroll"
+            >
+              {header.skills}
+            </Link>
+            <Link
+              activeClass="active"
+              to="section4"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="navLinkScroll"
+            >
+              {header.projects}
+            </Link>
+            <Link
+              activeClass="active"
+              to="section5"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="navLinkScroll"
+            >
+              {header.workExperience}
+            </Link>
+            <Link
+              activeClass="active"
+              to="section6"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="navLinkScroll"
+            >
+              {header.contact}
+            </Link>
           </HeaderMenu>
           <SmartphoneMenuDiv>
             <SmartphoneMenu header={header} />
@@ -88,21 +153,14 @@ const Nav = styled.nav`
 const Logo = styled.img`
   max-height: 45px;
   max-width: 45px;
+  cursor: pointer;
 `;
 
-const HeaderMenu = styled.div`
+const HeaderMenu = styled.nav`
   display: flex;
   @media (max-width: 715px) {
     display: none;
   }
-`;
-
-const Link = styled.div`
-  color: black;
-  font-size: 11pt;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin-left: 14px;
 `;
 
 const SmartphoneMenuDiv = styled.div`

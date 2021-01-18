@@ -1,8 +1,9 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
+import { Link, animateScroll as scroll } from "react-scroll";
 
+import "./topHeader.css";
 import SmartphoneMenu from "../smartphoneMenu/SmartphoneMenuWhite";
 
 const TopHeader = () => {
@@ -20,12 +21,72 @@ const TopHeader = () => {
             alt="Mathieu Tranchida Logo"
           />
           <HeaderMenu>
-            <Link>{header.bio}</Link>
-            <Link>{header.education}</Link>
-            <Link>{header.skills}</Link>
-            <Link>{header.projects}</Link>
-            <Link>{header.workExperience}</Link>
-            <Link>{header.contact}</Link>
+            <Link
+              activeClass="active"
+              to="section1"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="navLinkTop"
+            >
+              {header.bio}
+            </Link>
+            <Link
+              activeClass="active"
+              to="section2"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="navLinkTop"
+            >
+              {header.education}
+            </Link>
+            <Link
+              activeClass="active"
+              to="section3"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="navLinkTop"
+            >
+              {header.skills}
+            </Link>
+            <Link
+              activeClass="active"
+              to="section4"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="navLinkTop"
+            >
+              {header.projects}
+            </Link>
+            <Link
+              activeClass="active"
+              to="section5"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="navLinkTop"
+            >
+              {header.workExperience}
+            </Link>
+            <Link
+              activeClass="active"
+              to="section6"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="navLinkTop"
+            >
+              {header.contact}
+            </Link>
           </HeaderMenu>
           <SmartphoneMenuDiv>
             <SmartphoneMenu header={header} />
@@ -66,15 +127,6 @@ const HeaderMenu = styled.div`
   @media (max-width: 715px) {
     display: none;
   }
-`;
-
-const Link = styled.div`
-  color: white;
-  font-size: 11pt;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin-left: 14px;
-  text-shadow: 0px 0px 15px black;
 `;
 
 const SmartphoneMenuDiv = styled.div`
