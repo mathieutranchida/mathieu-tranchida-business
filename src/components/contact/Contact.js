@@ -8,8 +8,8 @@ import { FiPhone, FiMail } from "react-icons/fi";
 import EmailJs from "./EmailJs";
 
 const logoStyles = {
-  height: "28px",
-  width: "28px",
+  height: "25px",
+  width: "25px",
   color: "black",
 };
 
@@ -121,6 +121,7 @@ const Footer = styled.div`
   @media (max-width: 450px) {
     flex-direction: column;
     align-items: center;
+    width: inherit;
   }
 `;
 
@@ -130,7 +131,8 @@ const ContactInfo = styled.div`
 `;
 
 const Copyright = styled.div`
-  margin: 5px 0px 35px 0px;
+  margin: 35px 0px 40px 0px;
+  text-align: center;
 `;
 
 export default Contact;

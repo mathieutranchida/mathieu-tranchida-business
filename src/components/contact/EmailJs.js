@@ -106,6 +106,9 @@ const Form = styled.form`
   max-width: 500px;
   width: 100%;
   margin-top: 15px;
+  @media (max-width: 600px) {
+    width: 85vw;
+  }
 `;
 
 const Div = styled.div`
