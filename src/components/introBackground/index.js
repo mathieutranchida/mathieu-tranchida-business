@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Index = () => {
   return (
     <>
-      <Wrapper></Wrapper>
+      <Wrapper />
     </>
   );
 };
