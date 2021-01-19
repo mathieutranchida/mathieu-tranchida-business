@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import PhotoGrid from "./photoGrid";
 import Header from "./header";
+import Footer from "../footer/index";
 
 const PhotoPortfolio = () => {
   return (
@@ -10,6 +11,7 @@ const PhotoPortfolio = () => {
       <Wrapper>
         <Header />
         <PhotoGrid />
+        <Footer />
       </Wrapper>
     </>
   );

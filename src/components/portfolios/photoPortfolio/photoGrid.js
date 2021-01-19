@@ -155,7 +155,7 @@ const PhotoGrid = () => {
 };
 
 const Wrapper = styled.div`
-  min-height: calc(100vh - 31px);
+  min-height: calc(100vh - 31px - 16px - 35px - 20px - 15px);
 `;
 
 const Grid = styled.div`
