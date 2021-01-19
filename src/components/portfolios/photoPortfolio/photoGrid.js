@@ -121,11 +121,31 @@ const PhotoGrid = () => {
             alt="gallery photo image"
           />
           <ImageSmartphone
-            src="https://res.cloudinary.com/dldqebddc/image/upload/v1611030691/Business%20website/Grid%20Photo/photoGrid-16_hfwdpy.jpg"
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1611030692/Business%20website/Grid%20Photo/photoGrid-19_npfj2p.jpg"
+            alt="gallery photo image"
+          />
+          <ImageSmartphone
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1611030694/Business%20website/Grid%20Photo/photoGrid-30_puz1lm.jpg"
+            alt="gallery photo image"
+          />
+          <ImageSmartphone
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1611030693/Business%20website/Grid%20Photo/photoGrid-13_xdts27.jpg"
             alt="gallery photo image"
           />
           <ImageSmartphone
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1611030694/Business%20website/Grid%20Photo/photoGrid-31_pnw9hz.jpg"
+            alt="gallery photo image"
+          />
+          <ImageSmartphone
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1611030693/Business%20website/Grid%20Photo/photoGrid-23_l7mm6i.jpg"
+            alt="gallery photo image"
+          />
+          <ImageSmartphone
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1611030691/Business%20website/Grid%20Photo/photoGrid-14_mhun9b.jpg"
+            alt="gallery photo image"
+          />
+          <ImageSmartphone
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1611030693/Business%20website/Grid%20Photo/photoGrid-28_jj09hj.jpg"
             alt="gallery photo image"
           />
         </GridSmartphone>
