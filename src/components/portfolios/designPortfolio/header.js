@@ -56,8 +56,8 @@ const Link = styled(NavLink)`
   font-size: 16pt;
   display: flex;
   align-items: center;
-  @media (max-width: 500px) {
-    font-size: 5vw;
+  @media (max-width: 517px) {
+    font-size: 4vw;
   }
 `;
 
@@ -76,8 +76,8 @@ const Title = styled.h1`
     text-align: center;
     margin-top: 10px;
   }
-  @media (max-width: 500px) {
-    font-size: 5vw;
+  @media (max-width: 320px) {
+    font-size: 7vw;
   }
 `;
 

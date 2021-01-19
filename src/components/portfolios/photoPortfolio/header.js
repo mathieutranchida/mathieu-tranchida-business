@@ -37,7 +37,10 @@ const Header = () => {
 };
 
 const Wrapper = styled.div`
-  margin: 15px 5px 0px 5px;
+  position: fixed;
+  width: calc(100vw - 10px);
+  background-color: white;
+  padding: 15px 5px 12px 5px;
 `;
 
 const Main = styled.div`

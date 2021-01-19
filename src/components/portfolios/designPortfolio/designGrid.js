@@ -33,7 +33,7 @@ const DesignGrid = () => {
 };
 
 const Wrapper = styled.div`
-  min-height: calc(100vh - 31px - 16px - 35px - 20px - 15px);
+  min-height: calc(100vh - 58px - 71px);
   padding: 0px 15px;
   display: flex;
   justify-content: center;
@@ -42,6 +42,9 @@ const Wrapper = styled.div`
 const Main = styled.div`
   max-width: 1000px;
   margin-top: 43px;
+  @media (max-width: 1000px) {
+    margin: 81px 0px 0px 0px;
+  }
 `;
 
 const Image = styled.img`

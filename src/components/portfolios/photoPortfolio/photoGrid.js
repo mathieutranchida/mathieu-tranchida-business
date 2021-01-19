@@ -155,7 +155,10 @@ const PhotoGrid = () => {
 };
 
 const Wrapper = styled.div`
-  min-height: calc(100vh - 31px - 16px - 35px - 20px - 15px);
+  min-height: calc(100vh - 58px - 71px);
+  @media (max-width: 1000px) {
+    min-height: calc(100vh - 96px - 71px);
+  }
 `;
 
 const Grid = styled.div`
@@ -163,7 +166,7 @@ const Grid = styled.div`
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(29, 2.5vw);
   grid-gap: 15px;
-  padding: 15px;
+  padding: 43px 15px 15px 15px;
   @media (max-width: 2500px) {
     grid-template-rows: repeat(29, 2.2vw);
   }
@@ -175,6 +178,9 @@ const Grid = styled.div`
   }
   @media (max-width: 1100px) {
     grid-template-rows: repeat(29, 1.5vw);
+  }
+  @media (max-width: 1000px) {
+    padding: 81px 15px 15px 15px;
   }
   @media (max-width: 950px) {
     grid-template-rows: repeat(29, 1.3vw);
@@ -188,7 +194,7 @@ const Grid = styled.div`
 `;
 
 const GridSmartphone = styled.div`
-  padding: 1.25vw 0px;
+  padding: 81px 0px 1.25vw 0px;
   @media (min-width: 801px) {
     display: none;
   }
