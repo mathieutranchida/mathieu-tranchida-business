@@ -8,13 +8,13 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 import "./scrollHeader.css";
 import SmartphoneMenu from "../smartphoneMenu/SmartphoneMenuBlack";
+import LanguageSelector from "../LanguageSelector";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ScrollHeader = () => {
   const header = useSelector(
-    (state) =>
-      state.languageReducer.content && state.languageReducer.content.header
+    (state) => state.languageReducer.state && state.languageReducer.state.header
   );
 
   let headerRef = useRef(null);
@@ -114,7 +114,8 @@ const ScrollHeader = () => {
               className="navLinkScroll"
             >
               {header.contact}
-            </Link>
+            </Link>{" "}
+            <LanguageSelector />
           </HeaderMenu>
           <SmartphoneMenuDiv>
             <SmartphoneMenu header={header} />
@@ -158,13 +159,15 @@ const Logo = styled.img`
 
 const HeaderMenu = styled.nav`
   display: flex;
-  @media (max-width: 715px) {
+  align-items: center;
+
+  @media (max-width: 800px) {
     display: none;
   }
 `;
 
 const SmartphoneMenuDiv = styled.div`
-  @media (min-width: 716px) {
+  @media (min-width: 801px) {
     display: none;
   }
 `;

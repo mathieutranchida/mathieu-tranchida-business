@@ -9,7 +9,7 @@ import CbProjects from "./cbProjects/CbProjects";
 const Projects = () => {
   const projects = useSelector(
     (state) =>
-      state.languageReducer.content && state.languageReducer.content.projects
+      state.languageReducer.state && state.languageReducer.state.projects
   );
 
   return (

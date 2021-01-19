@@ -9,8 +9,7 @@ import Cssc from "./cssc/Cssc";
 const WorkExperience = () => {
   const work = useSelector(
     (state) =>
-      state.languageReducer.content &&
-      state.languageReducer.content.workExperience
+      state.languageReducer.state && state.languageReducer.state.workExperience
   );
 
   return (

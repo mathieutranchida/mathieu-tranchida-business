@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
 import { Link, animateScroll as scroll } from "react-scroll";
+import LanguageSelector from "../LanguageSelector";
 
 import "./topHeader.css";
 import SmartphoneMenu from "../smartphoneMenu/SmartphoneMenuWhite";
 
 const TopHeader = () => {
   const header = useSelector(
-    (state) =>
-      state.languageReducer.content && state.languageReducer.content.header
+    (state) => state.languageReducer.state && state.languageReducer.state.header
   );
 
   return (
@@ -87,6 +87,9 @@ const TopHeader = () => {
             >
               {header.contact}
             </Link>
+            <Filter>
+              <LanguageSelector />
+            </Filter>
           </HeaderMenu>
           <SmartphoneMenuDiv>
             <SmartphoneMenu header={header} />
@@ -105,7 +108,7 @@ const Wrapper = styled.div`
   z-index: 1;
   display: flex;
   justify-content: center;
-  margin: 20px 35px 0px 20px;
+  margin: 20px 28px 0px 20px;
 `;
 
 const Nav = styled.nav`
@@ -124,15 +127,22 @@ const Logo = styled.img`
 
 const HeaderMenu = styled.div`
   display: flex;
-  @media (max-width: 715px) {
+  align-items: center;
+  margin-top: -5px;
+  @media (max-width: 800px) {
     display: none;
   }
 `;
 
 const SmartphoneMenuDiv = styled.div`
-  @media (min-width: 716px) {
+  @media (min-width: 801px) {
     display: none;
   }
+`;
+
+const Filter = styled.div`
+  -webkit-filter: drop-shadow(0px 0px 15px black);
+  filter: drop-shadow(0px 0px 15px black);
 `;
 
 export default TopHeader;

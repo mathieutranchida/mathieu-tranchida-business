@@ -1,6 +1,5 @@
-// TODO FRENCH TRANSLATION
-const en = {
-  language: "english",
+export const en = {
+  currentLanguage: "english",
   header: {
     bio: "Bio",
     education: "Education",
@@ -144,9 +143,8 @@ const en = {
   },
 };
 
-// Still have to do the translation
-const fr = {
-  language: "french",
+export const fr = {
+  currentLanguage: "french",
   header: {
     bio: "Bio",
     education: "Education",

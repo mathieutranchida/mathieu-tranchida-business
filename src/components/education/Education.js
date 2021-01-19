@@ -7,8 +7,7 @@ import Schools from "./Schools";
 const Education = () => {
   const header = useSelector(
     (state) =>
-      state.languageReducer.content &&
-      state.languageReducer.content.education.title
+      state.languageReducer.state && state.languageReducer.state.education.title
   );
 
   return (

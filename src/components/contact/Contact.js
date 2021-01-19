@@ -22,7 +22,7 @@ const logoStylesContact = {
 const Contact = () => {
   const contact = useSelector(
     (state) =>
-      state.languageReducer.content && state.languageReducer.content.contact
+      state.languageReducer.state && state.languageReducer.state.contact
   );
 
   return (

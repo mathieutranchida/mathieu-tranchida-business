@@ -8,8 +8,7 @@ import Languages from "./Languages";
 
 const Skills = () => {
   const title = useSelector(
-    (state) =>
-      state.languageReducer.content && state.languageReducer.content.skills
+    (state) => state.languageReducer.state && state.languageReducer.state.skills
   );
 
   return (

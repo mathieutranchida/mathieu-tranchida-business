@@ -5,8 +5,8 @@ import { useSelector } from "react-redux";
 const Schools = () => {
   const content = useSelector(
     (state) =>
-      state.languageReducer.content &&
-      state.languageReducer.content.education.schools
+      state.languageReducer.state &&
+      state.languageReducer.state.education.schools
   );
 
   return (

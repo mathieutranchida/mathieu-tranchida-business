@@ -4,8 +4,7 @@ import { useSelector } from "react-redux";
 
 const Bio = () => {
   const content = useSelector(
-    (state) =>
-      state.languageReducer.content && state.languageReducer.content.bio
+    (state) => state.languageReducer.state && state.languageReducer.state.bio
   );
 
   return (
