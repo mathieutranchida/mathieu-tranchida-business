@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { RiArrowRightSLine } from "react-icons/ri";
 
 import CbFinalProject from "./cbFinalProject/CbFinalProject";
 import VincentAuthier from "./vincentAuthier/VincentAuthier";
@@ -30,11 +29,9 @@ const Projects = () => {
           <Div>
             <LinkOne to="/portfolio-photo">
               {projects.projects[3].title}{" "}
-              <RiArrowRightSLine style={arrowStyle} />
             </LinkOne>
             <LinkTwo to="/portfolio-design">
               {projects.projects[4].title}
-              <RiArrowRightSLine style={arrowStyle} />
             </LinkTwo>
           </Div>
         </Main>
@@ -75,11 +72,6 @@ const LinkOne = styled(NavLink)`
   margin-bottom: 0px;
   text-decoration: none;
   color: black;
-  display: flex;
-  align-items: center;
-  @media (max-width: 590px) {
-    text-align: center;
-  }
 `;
 
 const LinkTwo = styled(NavLink)`
@@ -91,11 +83,6 @@ const LinkTwo = styled(NavLink)`
   margin-bottom: 30px;
   text-decoration: none;
   color: black;
-  display: flex;
-  align-items: center;
-  @media (max-width: 590px) {
-    text-align: center;
-  }
 `;
 
 export default Projects;
