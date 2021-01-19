@@ -141,6 +141,11 @@ export const en = {
     message: "message",
     copyright: "Mathieu Tranchida - 2021 All rights Reserved ©",
   },
+  photoPortfolio: {
+    title: "Photography portfolio",
+    backToMain: "Home",
+    designPortfolio: "Design",
+  },
 };
 
 export const fr = {
@@ -285,5 +290,10 @@ export const fr = {
     name: "nom",
     message: "message",
     copyright: "Mathieu Tranchida - 2021 Tous droits réservés ©",
+  },
+  photoPortfolio: {
+    title: "Portfolio de photographie",
+    backToMain: "Page d'accueil",
+    designPortfolio: "Design",
   },
 };
