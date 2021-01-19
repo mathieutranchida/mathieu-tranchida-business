@@ -64,7 +64,8 @@ const Header = styled.h2`
   text-align: center;
   text-transform: uppercase;
   font-weight: 800;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  font-size: 13pt;
 `;
 
 const Main = styled.div`

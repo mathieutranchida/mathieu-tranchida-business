@@ -40,7 +40,8 @@ const Header = styled.h2`
   text-align: center;
   text-transform: uppercase;
   font-weight: 800;
-  margin-bottom: 13px;
+  margin-bottom: 8px;
+  font-size: 13pt;
 `;
 
 const Main = styled.div`
