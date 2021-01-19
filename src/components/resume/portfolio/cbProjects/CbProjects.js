@@ -65,7 +65,6 @@ const Link = styled.a`
   margin-top: 2px;
   display: flex;
   align-items: center;
-  width: 270px;
   cursor: pointer;
   font-weight: 600;
   transition: 300ms ease-in-out;

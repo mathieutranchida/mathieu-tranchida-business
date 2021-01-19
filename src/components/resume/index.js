@@ -9,7 +9,7 @@ import IntroBackground from "./introBackground/index";
 import Bio from "./bio/Bio";
 import Education from "./education/Education";
 import Skills from "./skills/Skills";
-import Projects from "./projects/Projects";
+import Projects from "./portfolio/Projects";
 import WorkExperience from "./workExperience/WorkExperience";
 import Contact from "./contact/Contact";
 
