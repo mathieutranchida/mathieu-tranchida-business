@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import GlobalStyles from "./GlobalStyles";
-import Home from "./components/index";
+import Home from "./components/resume/index";
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
         <GlobalStyles />
         <div>
           <Switch>
-            <Route exact patch="/" component={Home} />
+            <Route exact path="/" component={Home} />
           </Switch>
         </div>
       </BrowserRouter>

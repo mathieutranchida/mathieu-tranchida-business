@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
-import { receiveNewLanguage } from "../../redux/actions";
-import { en, fr } from "../../languages";
+import { receiveNewLanguage } from "../../../redux/actions";
+import { en, fr } from "../../../languages";
 
 const LanguageSelector = () => {
   const currentLanguage = useSelector(
