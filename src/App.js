@@ -13,7 +13,7 @@ const App = () => {
         <div>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/" component={PhotoGrid} />
+            <Route exact path="/portfolio-photo" component={PhotoGrid} />
           </Switch>
         </div>
       </BrowserRouter>
