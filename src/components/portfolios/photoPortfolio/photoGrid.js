@@ -154,7 +154,9 @@ const PhotoGrid = () => {
   );
 };
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  min-height: calc(100vh - 31px);
+`;
 
 const Grid = styled.div`
   display: grid;
