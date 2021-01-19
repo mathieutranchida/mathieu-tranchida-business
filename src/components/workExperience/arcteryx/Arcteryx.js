@@ -5,7 +5,12 @@ const Arcteryx = ({ job }) => {
   return (
     <>
       <Wrapper>
-        <CompanyWrapper>
+        <CompanyWrapper
+          href="https://arcteryx.com/ca/en/"
+          aria-label="Link towards Arc'teryx website - Lien vers site arc'teryx"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <CompanyLogo
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1610832013/Business%20website/Work/arcteryx_nzovbc.png"
             alt="Arc'teryx"
@@ -30,12 +35,14 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
-const CompanyWrapper = styled.div`
+const CompanyWrapper = styled.a`
   display: grid;
   grid-template-columns: 75px 1fr;
   grid-column-gap: 25px;
   margin-bottom: 0px;
   max-width: 980px;
+  text-decoration: none;
+  color: black;
   @media (max-width: 590px) {
     grid-template-columns: 1fr;
     margin-bottom: 0px;

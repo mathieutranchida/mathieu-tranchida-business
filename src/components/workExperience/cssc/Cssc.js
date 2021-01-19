@@ -5,7 +5,12 @@ const Cssc = ({ job }) => {
   return (
     <>
       <Wrapper>
-        <CompanyWrapper>
+        <CompanyWrapper
+          href="https://www.concordiass.club/"
+          aria-label="Link towards ski club website - lien vers site ski club"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <CompanyLogo
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1610832013/Business%20website/Work/CSSC-Square-White_bgrsgs.png"
             alt="Freelance photography at Mathieu Tranchida"
@@ -29,12 +34,14 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
-const CompanyWrapper = styled.div`
+const CompanyWrapper = styled.a`
   display: grid;
   grid-template-columns: 75px 1fr;
   grid-column-gap: 25px;
   margin-bottom: 0px;
   max-width: 980px;
+  text-decoration: none;
+  color: black;
   @media (max-width: 590px) {
     grid-template-columns: 1fr;
     margin-bottom: 0px;
