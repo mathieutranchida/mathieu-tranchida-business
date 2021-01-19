@@ -1,4 +1,4 @@
-import { fr as state } from "../../languages";
+import { en as state } from "../../languages";
 
 const initialState = {
   state,

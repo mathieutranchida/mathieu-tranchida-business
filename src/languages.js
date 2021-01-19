@@ -46,7 +46,7 @@ export const en = {
     },
   },
   projects: {
-    title: "Projects",
+    title: "Portfolio",
     projects: [
       {
         title: "E-Commerce Photography Website",
@@ -89,6 +89,12 @@ export const en = {
         description: [
           "While completing my diploma at Concordia Bootcamps, I worked on multiple solo projects, as well as one team project. Those projects include a Twitter clone (Frontend | Solo), a Flight booking app (Frontend & Backend | Solo), a Javascript game (Frontend | Solo) and an e-commerce web app (Frontend & Backend | Team of 3).",
         ],
+      },
+      {
+        title: "See photography portfolio",
+      },
+      {
+        title: "See design portfolio",
       },
     ],
   },
@@ -244,6 +250,12 @@ export const fr = {
         description: [
           "En complétant mon diplôme à Concordia Bootcamps, j'ai travaillé sur plusieurs projets solo, ainsi que sur un projet d'équipe. Ces projets incluent un clone Twitter (Frontend | Solo), une application de réservation de vol (Frontend & Backend | Solo), un jeu Javascript (Frontend | Solo) et une application Web de commerce électronique (Frontend & Backend | Équipe de 3).",
         ],
+      },
+      {
+        title: "Voir portfolio de photographie",
+      },
+      {
+        title: "Voir portfolio de design",
       },
     ],
   },
