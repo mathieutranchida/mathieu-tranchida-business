@@ -6,24 +6,40 @@ const DesignGrid = () => {
     <>
       <Wrapper>
         <Main>
-          <Image
+          <ImageHorizontal
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1611069435/Business%20website/Design%20portfolio/5_ubbz4q.jpg"
             alt="design portfolio image"
           />
-          <Image
+          <ImageHorizontal
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1611069435/Business%20website/Design%20portfolio/12_ccfgja.jpg"
             alt="design portfolio image"
           />
-          <Image
+          <ImageSquare
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1611074469/Business%20website/Design%20portfolio/13_v5zcc4.jpg"
+            alt="design portfolio image"
+          />
+          <ImageHorizontal
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1611069436/Business%20website/Design%20portfolio/10_ho5vot.jpg"
+            alt="design portfolio image"
+          />
+          <ImageVertical
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1611069435/Business%20website/Design%20portfolio/01_qvx5iw.jpg"
             alt="design portfolio image"
           />
-          <Image
+          <ImageHorizontal
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1611069435/Business%20website/Design%20portfolio/11_yojqv6.jpg"
+            alt="design portfolio image"
+          />
+          <ImageSquare
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1611069433/Business%20website/Design%20portfolio/03_tueguy.jpg"
             alt="design portfolio image"
           />
-          <Image
-            src="https://res.cloudinary.com/dldqebddc/image/upload/v1611069435/Business%20website/Design%20portfolio/01_qvx5iw.jpg"
+          <ImageHorizontal
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1611069433/Business%20website/Design%20portfolio/04_nfqu3z.png"
+            alt="design portfolio image"
+          />
+          <ImageVertical
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1611069434/Business%20website/Design%20portfolio/09_cngy89.jpg"
             alt="design portfolio image"
           />
         </Main>
@@ -47,9 +63,26 @@ const Main = styled.div`
   }
 `;
 
-const Image = styled.img`
+const ImageHorizontal = styled.img`
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  user-select: none;
+  margin: 15px auto;
+`;
+
+const ImageVertical = styled.img`
   max-width: 100%;
   max-height: 75vh;
+  object-fit: cover;
+  display: block;
+  user-select: none;
+  margin: 15px auto;
+`;
+
+const ImageSquare = styled.img`
+  max-width: 100%;
+  max-height: 57.8vh;
   object-fit: cover;
   display: block;
   user-select: none;

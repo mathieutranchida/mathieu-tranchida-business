@@ -21,14 +21,14 @@ const Header = () => {
     <>
       <Wrapper>
         <Main>
-          <Link to="/">
+          <LinkLeft to="/">
             <RiArrowLeftSLine style={arrowStyle} />
             {header.backToMain}
-          </Link>
-          <Link to="/portfolio-design">
+          </LinkLeft>
+          <LinkRight to="/portfolio-design">
             {header.designPortfolio}
             <RiArrowRightSLine style={arrowStyle} />
-          </Link>
+          </LinkRight>
         </Main>
         <Title>{header.title}</Title>
       </Wrapper>
@@ -48,7 +48,7 @@ const Main = styled.div`
   justify-content: space-between;
 `;
 
-const Link = styled(NavLink)`
+const LinkLeft = styled(NavLink)`
   text-decoration: none;
   color: black;
   font-weight: 600;
@@ -56,8 +56,39 @@ const Link = styled(NavLink)`
   font-size: 16pt;
   display: flex;
   align-items: center;
-  @media (max-width: 500px) {
-    font-size: 5vw;
+  transition: 400ms ease-in-out;
+  @media (max-width: 517px) {
+    font-size: 4vw;
+  }
+  &:hover {
+    transform: translateX(4px);
+  }
+  @media screen and (prefers-reduced-motion) {
+    &:hover {
+      transform: translateX(0px);
+    }
+  }
+`;
+
+const LinkRight = styled(NavLink)`
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16pt;
+  display: flex;
+  align-items: center;
+  transition: 400ms ease-in-out;
+  @media (max-width: 517px) {
+    font-size: 4vw;
+  }
+  &:hover {
+    transform: translateX(-4px);
+  }
+  @media screen and (prefers-reduced-motion) {
+    &:hover {
+      transform: translateX(0px);
+    }
   }
 `;
 

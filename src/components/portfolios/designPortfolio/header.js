@@ -21,14 +21,14 @@ const Header = () => {
     <>
       <Wrapper>
         <Main>
-          <Link to="/">
+          <LinkLeft to="/">
             <RiArrowLeftSLine style={arrowStyle} />
             {header.backToMain}
-          </Link>
-          <Link to="/portfolio-photo">
+          </LinkLeft>
+          <LinkRight to="/portfolio-photo">
             {header.photoPortfolio}
             <RiArrowRightSLine style={arrowStyle} />
-          </Link>
+          </LinkRight>
         </Main>
         <Title>{header.title}</Title>
       </Wrapper>
@@ -48,7 +48,7 @@ const Main = styled.div`
   justify-content: space-between;
 `;
 
-const Link = styled(NavLink)`
+const LinkLeft = styled(NavLink)`
   text-decoration: none;
   color: black;
   font-weight: 600;
@@ -56,8 +56,39 @@ const Link = styled(NavLink)`
   font-size: 16pt;
   display: flex;
   align-items: center;
+  transition: 400ms ease-in-out;
   @media (max-width: 517px) {
     font-size: 4vw;
+  }
+  &:hover {
+    transform: translateX(4px);
+  }
+  @media screen and (prefers-reduced-motion) {
+    &:hover {
+      transform: translateX(0px);
+    }
+  }
+`;
+
+const LinkRight = styled(NavLink)`
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16pt;
+  display: flex;
+  align-items: center;
+  transition: 400ms ease-in-out;
+  @media (max-width: 517px) {
+    font-size: 4vw;
+  }
+  &:hover {
+    transform: translateX(-4px);
+  }
+  @media screen and (prefers-reduced-motion) {
+    &:hover {
+      transform: translateX(0px);
+    }
   }
 `;
 
@@ -76,8 +107,8 @@ const Title = styled.h1`
     text-align: center;
     margin-top: 10px;
   }
-  @media (max-width: 320px) {
-    font-size: 7vw;
+  @media (max-width: 500px) {
+    font-size: 5vw;
   }
 `;
 
