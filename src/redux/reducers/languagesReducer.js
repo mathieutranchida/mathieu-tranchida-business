@@ -4,7 +4,7 @@ const initialState = {
       bio: "Bio",
       education: "Education",
       skills: "Skills",
-      projects: "Projects",
+      projects: "Portfolio",
       workExperience: "Work Experience",
       contact: "Contact",
     },
@@ -33,7 +33,7 @@ const initialState = {
           date: "Fall 2016 - Winter 2020",
         },
         {
-          program: "French Baccalauréat - Economic & Social Studies",
+          program: "French Baccalaureate - Economic & Social Studies",
           schoolName: "Lycée Français de Zürich",
           honnors: `Honnors: "Très bien"`,
           date: "Fall 2013 - Summer 2016",
@@ -100,10 +100,10 @@ const initialState = {
       jobs: [
         {
           company: "Freelance photographer",
-          jobTitle: "Photographer | 2017 - Now | Canada & Switzerland",
+          jobTitle: "Photographer | 2017 - Now | Canada, Switzerland, France",
           description: [
             "I've been working as a freelance photographer for four years on the side of my studies and other activities. While it started as a passion, it gave me the opportunity to work with global companies and some of the best athletes in the world.",
-            `In that time, I mainly commercial and editorial projects. My client roaster includes Arc'teryx, Allez-Up, Jackalope, Psicobloc, iF3, and 686. I have also been published in L'Équipe, Skipass, Gripped Magazine, The Ski Journal, and Downdays. Key takeaways from this experience are my ability to take calculated risks, perform well under pressure, and high standards for what I consider "good work". See my portfolio in the "Portfolio" section.`,
+            `In that time, I mainly worked on commercial and editorial projects. My client roaster includes Arc'teryx, Allez-Up, Jackalope, Psicobloc, iF3, and 686. I have also been published in L'Équipe, Skipass, Gripped Magazine, The Ski Journal, and Downdays. Key takeaways from this experience are my ability to take calculated risks, perform well under pressure, and high standards for what I consider "good work". See my photo portfolio in the "Portfolio" section.`,
           ],
         },
         {
@@ -130,7 +130,7 @@ const initialState = {
           description: [
             "The Concordia Ski & Snowboard Club is one of the most active clubs on campus with more than 500 active members and +20 events every year.",
             "I joined the club in 2017 as the VP of Marketing. My role was to come up with marketing strategies to sell tickets and produce the content for each trip.",
-            "After a year in the position of VP Marketing, I was elected President of the club. My responsibilities included managing a team of six executives, overseeing finances, marketing, operations, and sponsorships. In the 18/19 season, along with my team, I planned and ran over 20 events, including 10-day trips and two weekenders, generating over $90,000 in sales revenue. We worked with external companies and sponsors such as Reb Bull and Orage. Leadership and teamwork are key takeaways from this experience.",
+            "After a year in the position of VP Marketing, I was elected President of the club. My responsibilities included managing a team of six executives, overseeing finances, marketing, operations, and sponsorships. In the 18/19 season, along with my team, I planned and ran over 20 events, including 10-day trips and two weekenders, generating over $90,000 in sales revenue. We worked with external companies and sponsors such as Red Bull and Orage. Leadership and teamwork are key takeaways from this experience.",
           ],
         },
       ],
