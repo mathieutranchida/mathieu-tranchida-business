@@ -146,6 +146,11 @@ export const en = {
     backToMain: "Home",
     designPortfolio: "Design",
   },
+  designPortfolio: {
+    title: "Design portfolio",
+    backToMain: "Home",
+    photoPortfolio: "Photography",
+  },
 };
 
 export const fr = {
@@ -295,5 +300,10 @@ export const fr = {
     title: "Portfolio de photographie",
     backToMain: "Page d'accueil",
     designPortfolio: "Design",
+  },
+  designPortfolio: {
+    title: "Portfolio de design",
+    backToMain: "Page d'accueil",
+    photoPortfolio: "Photographie",
   },
 };
