@@ -59,6 +59,7 @@ const SmartphoneMenu = () => {
           aria-describedby="transition-modal-description"
           className={classes.modal}
           open={open}
+          style={{ zIndex: 10000 }}
           onClose={handleClose}
           closeAfterTransition
           BackdropComponent={Backdrop}

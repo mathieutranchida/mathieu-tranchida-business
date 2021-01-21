@@ -11,7 +11,7 @@ export const en = {
   introHeader: "Find out more about Mathieu Tranchida!",
   bio: {
     intro: [
-      "I'm a passionate Full-Stack Web Developer with an eye for creativity and attention to detail. I love creating efficient apps that have an impact on a community. While I have a strong knowledge of modern web technologies, I bring new dimensions to the table with my business and artistic skills",
+      "I'm a passionate Full-Stack Web Developer with an eye for creativity and attention to detail. I love creating efficient apps that have an impact on a community. While I have a strong knowledge of modern web technologies, I bring new dimensions with my business and artistic skills",
       "photography",
       "and",
       "design",
@@ -172,12 +172,14 @@ export const fr = {
     contact: "Contact",
   },
   introHeader: "En savoir plus sur Mathieu Tranchida!",
-  intro: [
-    "Je suis un développeur Web Full-Stack passionné avec un oeil pour la créativité et le souci du détail. J'adore créer des applications efficaces qui ont un impact sur une communauté. Bien que je possède une connaissance approfondie des technologies modernes du web, j'apporte de nouvelles dimensions à la table avec mes compétences commerciales et artistiques",
-    "photographie",
-    "et",
-    "design",
-  ],
+  bio: {
+    intro: [
+      "Je suis un développeur Web Full-Stack passionné avec un oeil pour la créativité et le souci du détail. J'adore créer des applications efficaces qui ont un impact sur une communauté. Bien que je possède une connaissance approfondie des technologies modernes du web, j'apporte de nouvelles dimensions avec mes compétences commerciales et artistiques",
+      "photographie",
+      "et",
+      "design",
+    ],
+  },
   education: {
     title: "Education",
     schools: [
