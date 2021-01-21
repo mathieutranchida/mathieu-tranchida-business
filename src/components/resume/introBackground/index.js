@@ -19,6 +19,7 @@ const Index = () => {
           <IntroHeader>{introHeader}</IntroHeader>
         </Position>
       </Animation>
+      <IntroHeaderSmartphone>{introHeader}</IntroHeaderSmartphone>
     </>
   );
 };
@@ -45,11 +46,22 @@ const Animation = styled.div`
   z-index: 1;
   top: 72vh;
   padding: 20px 75px;
-  background: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
   user-select: none;
   display: flex;
   align-items: center;
   overflow: hidden;
+  @media (max-width: 1150px) {
+    font-size: 15pt;
+    padding: 20px 20px 20px 40px;
+  }
+  @media (max-width: 750px) {
+    display: none;
+  }
+  @media (min-width: 1850px) {
+    left: 5vw;
+    top: 75vh;
+  }
 `;
 
 const Slash = styled.div`
@@ -82,6 +94,10 @@ const Slash = styled.div`
   @media (prefers-reduced-motion: reduce) {
     animation: none;
   }
+
+  @media (max-width: 1150px) {
+    font-size: 30pt;
+  }
 `;
 
 const Position = styled.div`
@@ -112,6 +128,27 @@ const IntroHeader = styled.div`
   }
   @media (prefers-reduced-motion: reduce) {
     animation: none;
+  }
+  @media (max-width: 1150px) {
+    font-size: 15pt;
+  }
+`;
+
+const IntroHeaderSmartphone = styled.div`
+  position: absolute;
+  z-index: 1;
+  top: 67vh;
+  left: 50vw;
+  width: 80vw;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14pt;
+  text-align: center;
+  font-weight: 700;
+  -webkit-filter: drop-shadow(0px 0px 15px black);
+  filter: drop-shadow(0px 0px 15px black);
+  @media (min-width: 751px) {
+    display: none;
   }
 `;
 
