@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-import ModalDemo from "./ModalDemo";
+import ModalDemo from "../ModalDemo";
 
 import { FiChevronRight } from "react-icons/fi";
 
 const CbFinalProject = ({ project }) => {
+  const videoUrl = "https://youtu.be/OV-pgbO35rM";
+
   return (
     <>
       <Wrapper>
@@ -33,7 +35,7 @@ const CbFinalProject = ({ project }) => {
               }}
             />
           </Link>
-          <ModalDemo title={project.title} />
+          <ModalDemo title={project.title} videoUrl={videoUrl} />
         </LinkWrapper>
         <DescriptionTitle>{project.descriptionTitle}</DescriptionTitle>
         <Description>{project.description[0]}</Description>

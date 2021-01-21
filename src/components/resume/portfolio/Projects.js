@@ -13,11 +13,6 @@ const Projects = () => {
       state.languageReducer.state && state.languageReducer.state.projects
   );
 
-  const arrowStyle = {
-    height: "19px",
-    width: "19px",
-  };
-
   return (
     <>
       <Wrapper>

@@ -23,9 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const videoUrl = "https://youtu.be/9yIv7FQP2UA";
-
-const ModalDemo = ({ title }) => {
+const ModalDemo = ({ title, videoUrl }) => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -46,7 +44,7 @@ const ModalDemo = ({ title }) => {
         onKeyDown={(e) => {
           if (e.key === "Enter") {
             e.stopPropagation();
-            handleOpen();
+            window.open(`${videoUrl}`);
           }
         }}
       >

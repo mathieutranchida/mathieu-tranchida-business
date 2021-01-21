@@ -114,7 +114,7 @@ const ScrollHeader = () => {
               className="navLinkScroll"
             >
               {header.contact}
-            </Link>{" "}
+            </Link>
             <LanguageSelector />
           </HeaderMenu>
           <SmartphoneMenuDiv>
