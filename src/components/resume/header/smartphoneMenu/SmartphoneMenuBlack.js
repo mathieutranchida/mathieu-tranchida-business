@@ -29,8 +29,6 @@ const SmartphoneMenu = () => {
     (state) => state.languageReducer.state && state.languageReducer.state.header
   );
 
-  console.log(header);
-
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 

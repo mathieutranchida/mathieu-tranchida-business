@@ -142,6 +142,7 @@ const Wrapper = styled.div`
   height: 55px;
   padding: 0px 20px;
   background-color: white;
+  z-index: 3000;
 `;
 
 const Nav = styled.nav`

@@ -13,6 +13,8 @@ import Projects from "./portfolio/Projects";
 import WorkExperience from "./workExperience/WorkExperience";
 import Contact from "./contact/Contact";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Index = () => {
   let revealRefs = useRef([]);
   revealRefs.current = [];
