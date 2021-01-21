@@ -22,7 +22,10 @@ const LanguageSelector = () => {
               dispatch(receiveNewLanguage(fr));
             }}
           >
-            <Logo src="https://res.cloudinary.com/dldqebddc/image/upload/v1610818136/Business%20website/Skills/Languages/download_n266lb.png" />
+            <Logo
+              src="https://res.cloudinary.com/dldqebddc/image/upload/v1610818136/Business%20website/Skills/Languages/1200px-Flag_of_France.svg_ehv8dr.png"
+              alt="French - Français"
+            />
           </Button>
         ) : (
           <Button
@@ -32,8 +35,8 @@ const LanguageSelector = () => {
             }}
           >
             <Logo
-              src="https://res.cloudinary.com/dldqebddc/image/upload/v1610818136/Business%20website/Skills/Languages/1200px-Flag_of_France.svg_ehv8dr.png"
-              alt="French - Français"
+              src="https://res.cloudinary.com/dldqebddc/image/upload/v1610818136/Business%20website/Skills/Languages/download_n266lb.png"
+              alt="English - Anglais"
             />
           </Button>
         )}

@@ -10,12 +10,12 @@ export const en = {
   },
   introHeader: "Find out more about Mathieu Tranchida!",
   bio: {
-    mainText:
-      "Hello! My name is Mathieu Tranchida, I'm 23 years old and I'm a web developer.",
-    secondaryText:
-      "Originally from France and Switzerland, I moved to Canada to complete my university studies and I am now looking for a full-time opportunity.",
-    secondaryTextReturn:
-      "My business, artistic and technical skills make me a unique and versatile prospect for your projects.",
+    intro: [
+      "I'm a passionate Full-Stack Web Developer with an eye for creativity and attention to detail. I love creating efficient apps that have an impact on a community. While I have a strong knowledge of modern web technologies, I bring new dimensions to the table with my business and artistic skills",
+      "photography",
+      "and",
+      "design",
+    ],
   },
   education: {
     title: "Education",
@@ -172,14 +172,12 @@ export const fr = {
     contact: "Contact",
   },
   introHeader: "En savoir plus sur Mathieu Tranchida!",
-  bio: {
-    mainText:
-      "Bonjour! Je m'appelle Mathieu Tranchida, j'ai 23 ans et je suis développeur web.",
-    secondaryText:
-      "Originaire de France et de Suisse, j'ai déménagé au Canada pour faire mes études universitaires. Je suis maintenant à la recherche d'une opportunité à temps plein.",
-    secondaryTextReturn:
-      "Mes compétences commerciales, artistiques et techniques font de moi une perspective unique et polyvalente pour vos projets.",
-  },
+  intro: [
+    "Je suis un développeur Web Full-Stack passionné avec un oeil pour la créativité et le souci du détail. J'adore créer des applications efficaces qui ont un impact sur une communauté. Bien que je possède une connaissance approfondie des technologies modernes du web, j'apporte de nouvelles dimensions à la table avec mes compétences commerciales et artistiques",
+    "photographie",
+    "et",
+    "design",
+  ],
   education: {
     title: "Education",
     schools: [

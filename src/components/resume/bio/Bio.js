@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Bio = () => {
   const content = useSelector(
@@ -11,11 +12,16 @@ const Bio = () => {
     <>
       <Wrapper>
         <Main>
-          <P>{content.mainText}</P>
           <P>
-            {content.secondaryText}
-            <br />
-            {content.secondaryTextReturn}
+            {content.intro[0]} (
+            <Link to="/portfolio-photo" style={{ color: "black" }}>
+              {content.intro[1]}
+            </Link>{" "}
+            {content.intro[2]}{" "}
+            <Link to="/portfolio-design" style={{ color: "black" }}>
+              {content.intro[3]}
+            </Link>
+            ).
           </P>
         </Main>
       </Wrapper>
@@ -31,11 +37,11 @@ const Wrapper = styled.div`
 `;
 
 const Main = styled.div`
-  max-width: 1250px;
+  max-width: 980px;
 `;
 
 const P = styled.p`
-  text-align: center;
+  text-align: justify;
   font-weight: 600;
   font-size: 10.5pt;
   margin-bottom: 25px;
