@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useSelector } from "react-redux";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiGmail, SiInstagram } from "react-icons/si";
-import { FiPhone, FiMail } from "react-icons/fi";
+import { FiPhone, FiMail, FiGithub } from "react-icons/fi";
 
 const Footer = () => {
   const footer = useSelector(
@@ -61,6 +61,13 @@ const Footer = () => {
             >
               <SiInstagram style={logoStyles} />
             </a>
+            <a
+              href="https://github.com/mathieutranchida"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FiGithub style={logoStyles} />
+            </a>
           </LogoDiv>
         </Div>
       </Wrapper>
@@ -97,7 +104,7 @@ const Div = styled.div`
 const LogoDiv = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 140px;
+  width: 180px;
   margin-top: 20px;
 `;
 
