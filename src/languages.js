@@ -8,7 +8,7 @@ export const en = {
     workExperience: "Work Experience",
     contact: "Contact",
   },
-  introHeader: "Get a better picture of who I am!",
+  introHeader: "Find out more about Mathieu Tranchida!",
   bio: {
     mainText:
       "Hello! My name is Mathieu Tranchida, I'm 23 years old and I'm a web developer.",
@@ -171,7 +171,7 @@ export const fr = {
     workExperience: "Expérience",
     contact: "Contact",
   },
-  introHeader: "Obtenez une meilleure image de qui je suis!",
+  introHeader: "En savoir plus sur Mathieu Tranchida!",
   bio: {
     mainText:
       "Bonjour! Je m'appelle Mathieu Tranchida, j'ai 23 ans et je suis développeur web.",
