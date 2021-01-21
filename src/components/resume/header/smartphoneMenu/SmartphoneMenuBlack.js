@@ -6,7 +6,7 @@ import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import { useSelector } from "react-redux";
 import { FiMenu, FiX } from "react-icons/fi";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import LanguageSelector from "../LanguageSelector";
 import "./smartphoneMenu.css";
 

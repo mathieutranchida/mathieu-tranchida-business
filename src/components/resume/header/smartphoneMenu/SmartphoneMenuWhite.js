@@ -6,7 +6,7 @@ import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import { useSelector } from "react-redux";
 import { FiMenu, FiX } from "react-icons/fi";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link, scroller } from "react-scroll";
 import LanguageSelector from "../LanguageSelector";
 import "./smartphoneMenu.css";
 
@@ -55,6 +55,14 @@ const SmartphoneMenu = () => {
             aria-controls="simple-menu"
             aria-haspopup="true"
             onClick={handleOpen}
+            tabIndex="0"
+            aria-label="Open menu - Ouvrir menu"
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                e.stopPropagation();
+                handleOpen();
+              }
+            }}
           />
         </MenuButtonDiv>
         <Modal
@@ -99,6 +107,21 @@ const SmartphoneMenu = () => {
                   duration={500}
                   className="smartphoneScrollNavLink"
                   onClick={handleClose}
+                  tabIndex="0"
+                  aria-label={header.bio}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      e.stopPropagation();
+                      scroller.scrollTo("section1", {
+                        activeClass: "active",
+                        spy: true,
+                        smooth: true,
+                        offset: -70,
+                        duration: 500,
+                      });
+                      handleClose();
+                    }
+                  }}
                 >
                   {header.bio}
                 </Link>
@@ -111,6 +134,21 @@ const SmartphoneMenu = () => {
                   duration={500}
                   className="smartphoneScrollNavLink"
                   onClick={handleClose}
+                  tabIndex="0"
+                  aria-label={header.education}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      e.stopPropagation();
+                      scroller.scrollTo("section2", {
+                        activeClass: "active",
+                        spy: true,
+                        smooth: true,
+                        offset: -70,
+                        duration: 500,
+                      });
+                      handleClose();
+                    }
+                  }}
                 >
                   {header.education}
                 </Link>
@@ -123,6 +161,21 @@ const SmartphoneMenu = () => {
                   duration={500}
                   className="smartphoneScrollNavLink"
                   onClick={handleClose}
+                  tabIndex="0"
+                  aria-label={header.skills}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      e.stopPropagation();
+                      scroller.scrollTo("section3", {
+                        activeClass: "active",
+                        spy: true,
+                        smooth: true,
+                        offset: -70,
+                        duration: 500,
+                      });
+                      handleClose();
+                    }
+                  }}
                 >
                   {header.skills}
                 </Link>
@@ -135,6 +188,21 @@ const SmartphoneMenu = () => {
                   duration={500}
                   className="smartphoneScrollNavLink"
                   onClick={handleClose}
+                  tabIndex="0"
+                  aria-label={header.projects}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      e.stopPropagation();
+                      scroller.scrollTo("section4", {
+                        activeClass: "active",
+                        spy: true,
+                        smooth: true,
+                        offset: -70,
+                        duration: 500,
+                      });
+                      handleClose();
+                    }
+                  }}
                 >
                   {header.projects}
                 </Link>
@@ -147,6 +215,21 @@ const SmartphoneMenu = () => {
                   duration={500}
                   className="smartphoneScrollNavLink"
                   onClick={handleClose}
+                  tabIndex="0"
+                  aria-label={header.workExperience}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      e.stopPropagation();
+                      scroller.scrollTo("section5", {
+                        activeClass: "active",
+                        spy: true,
+                        smooth: true,
+                        offset: -70,
+                        duration: 500,
+                      });
+                      handleClose();
+                    }
+                  }}
                 >
                   {header.workExperience}
                 </Link>
@@ -159,6 +242,21 @@ const SmartphoneMenu = () => {
                   duration={500}
                   className="smartphoneScrollNavLink"
                   onClick={handleClose}
+                  tabIndex="0"
+                  aria-label={header.contact}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      e.stopPropagation();
+                      scroller.scrollTo("section6", {
+                        activeClass: "active",
+                        spy: true,
+                        smooth: true,
+                        offset: -70,
+                        duration: 500,
+                      });
+                      handleClose();
+                    }
+                  }}
                 >
                   {header.contact}
                 </Link>
