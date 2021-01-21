@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link, scroller } from "react-scroll";
 import LanguageSelector from "../LanguageSelector";
 
 import "./topHeader.css";
@@ -29,6 +29,20 @@ const TopHeader = () => {
               offset={-70}
               duration={500}
               className="navLinkTop"
+              tabIndex="0"
+              aria-label={header.bio}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.stopPropagation();
+                  scroller.scrollTo("section1", {
+                    activeClass: "active",
+                    spy: true,
+                    smooth: true,
+                    offset: -70,
+                    duration: 500,
+                  });
+                }
+              }}
             >
               {header.bio}
             </Link>
@@ -40,6 +54,20 @@ const TopHeader = () => {
               offset={-70}
               duration={500}
               className="navLinkTop"
+              tabIndex="0"
+              aria-label={header.education}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.stopPropagation();
+                  scroller.scrollTo("section2", {
+                    activeClass: "active",
+                    spy: true,
+                    smooth: true,
+                    offset: -70,
+                    duration: 500,
+                  });
+                }
+              }}
             >
               {header.education}
             </Link>
@@ -51,6 +79,20 @@ const TopHeader = () => {
               offset={-70}
               duration={500}
               className="navLinkTop"
+              tabIndex="0"
+              aria-label={header.skills}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.stopPropagation();
+                  scroller.scrollTo("section3", {
+                    activeClass: "active",
+                    spy: true,
+                    smooth: true,
+                    offset: -70,
+                    duration: 500,
+                  });
+                }
+              }}
             >
               {header.skills}
             </Link>
@@ -62,6 +104,20 @@ const TopHeader = () => {
               offset={-70}
               duration={500}
               className="navLinkTop"
+              tabIndex="0"
+              aria-label={header.projects}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.stopPropagation();
+                  scroller.scrollTo("section4", {
+                    activeClass: "active",
+                    spy: true,
+                    smooth: true,
+                    offset: -70,
+                    duration: 500,
+                  });
+                }
+              }}
             >
               {header.projects}
             </Link>
@@ -73,6 +129,20 @@ const TopHeader = () => {
               offset={-70}
               duration={500}
               className="navLinkTop"
+              tabIndex="0"
+              aria-label={header.workExperience}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.stopPropagation();
+                  scroller.scrollTo("section5", {
+                    activeClass: "active",
+                    spy: true,
+                    smooth: true,
+                    offset: -70,
+                    duration: 500,
+                  });
+                }
+              }}
             >
               {header.workExperience}
             </Link>
@@ -84,6 +154,20 @@ const TopHeader = () => {
               offset={-70}
               duration={500}
               className="navLinkTop"
+              tabIndex="0"
+              aria-label={header.contact}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.stopPropagation();
+                  scroller.scrollTo("section6", {
+                    activeClass: "active",
+                    spy: true,
+                    smooth: true,
+                    offset: -70,
+                    duration: 500,
+                  });
+                }
+              }}
             >
               {header.contact}
             </Link>
