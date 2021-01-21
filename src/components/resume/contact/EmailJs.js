@@ -2,11 +2,38 @@ import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import emailjs from "emailjs-com";
 import { gsap } from "gsap";
+import { makeStyles } from "@material-ui/core/styles";
+import Popover from "@material-ui/core/Popover";
+import Typography from "@material-ui/core/Typography";
+
+const useStyles = makeStyles((theme) => ({
+  typography: {
+    padding: theme.spacing(2),
+  },
+}));
 
 const Contact = ({ contact }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+    gsap.to(messageArea, {
+      duration: 1,
+      height: "15px",
+      ease: "power2",
+    });
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popover" : undefined;
 
   let messageArea = useRef(null);
 
@@ -96,7 +123,29 @@ const Contact = ({ contact }) => {
           type="submit"
           value={contact.send}
           disabled={!name || !email.includes("@") || !message}
+          aria-describedby={id}
+          variant="contained"
+          color="primary"
+          onClick={handleClick}
         />
+        <Popover
+          id={id}
+          open={open}
+          anchorEl={anchorEl}
+          onClose={handleClose}
+          anchorOrigin={{
+            vertical: "bottom",
+            horizontal: "center",
+          }}
+          transformOrigin={{
+            vertical: "top",
+            horizontal: "center",
+          }}
+        >
+          <Typography className={classes.typography}>
+            {contact.confirmation}
+          </Typography>
+        </Popover>
       </Form>
     </>
   );

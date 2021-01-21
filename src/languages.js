@@ -147,6 +147,7 @@ export const en = {
     name: "name",
     message: "message",
     copyright: "Mathieu Tranchida - 2021 All rights Reserved ©",
+    confirmation: "Your email has been sent!",
   },
   photoPortfolio: {
     title: "Photography portfolio",
@@ -309,6 +310,7 @@ export const fr = {
     name: "nom",
     message: "message",
     copyright: "Mathieu Tranchida - 2021 Tous droits réservés ©",
+    confirmation: "Votre email a été envoyé!",
   },
   photoPortfolio: {
     title: "Portfolio de photographie",
