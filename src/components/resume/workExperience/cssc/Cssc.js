@@ -2,14 +2,22 @@ import React from "react";
 import styled from "styled-components";
 
 const Cssc = ({ job }) => {
+  const url = "https://www.concordiass.club/";
   return (
     <>
       <Wrapper>
         <CompanyWrapper
-          href="https://www.concordiass.club/"
-          aria-label="Link towards ski club website - lien vers site ski club"
+          href={url}
           rel="noopener noreferrer"
           target="_blank"
+          tabIndex="0"
+          aria-label="Link towards ski club website - lien vers site ski club"
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              e.stopPropagation();
+              window.open(url);
+            }
+          }}
         >
           <CompanyLogo
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1610832013/Business%20website/Work/CSSC-Square-White_bgrsgs.png"

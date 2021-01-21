@@ -40,7 +40,7 @@ const ModalDemo = ({ title, videoUrl }) => {
       <OpenDemo
         onClick={handleOpen}
         tabIndex="0"
-        aria-label="open the demo modal"
+        aria-label="open the demo link"
         onKeyDown={(e) => {
           if (e.key === "Enter") {
             e.stopPropagation();

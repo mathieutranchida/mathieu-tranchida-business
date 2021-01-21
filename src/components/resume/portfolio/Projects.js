@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 
 import CbFinalProject from "./cbFinalProject/CbFinalProject";
 import VincentAuthier from "./vincentAuthier/VincentAuthier";
@@ -13,6 +13,8 @@ const Projects = () => {
       state.languageReducer.state && state.languageReducer.state.projects
   );
 
+  const history = useHistory();
+
   return (
     <>
       <Wrapper>
@@ -22,10 +24,30 @@ const Projects = () => {
           <VincentAuthier project={projects.projects[1]} />
           <CbProjects project={projects.projects[2]} />
           <Div>
-            <LinkOne to="/portfolio-photo">
+            <LinkOne
+              to="/portfolio-photo"
+              tabIndex="0"
+              aria-label={projects.projects[3].title}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.stopPropagation();
+                  history.push("/portfolio-photo");
+                }
+              }}
+            >
               {projects.projects[3].title}{" "}
             </LinkOne>
-            <LinkTwo to="/portfolio-design">
+            <LinkTwo
+              to="/portfolio-design"
+              tabIndex="0"
+              aria-label={projects.projects[4].title}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.stopPropagation();
+                  history.push("/portfolio-design");
+                }
+              }}
+            >
               {projects.projects[4].title}
             </LinkTwo>
           </Div>

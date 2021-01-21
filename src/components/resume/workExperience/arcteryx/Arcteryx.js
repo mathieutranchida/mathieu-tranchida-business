@@ -2,14 +2,22 @@ import React from "react";
 import styled from "styled-components";
 
 const Arcteryx = ({ job }) => {
+  const url = "https://arcteryx.com/ca/en/";
   return (
     <>
       <Wrapper>
         <CompanyWrapper
-          href="https://arcteryx.com/ca/en/"
-          aria-label="Link towards Arc'teryx website - Lien vers site arc'teryx"
+          href={url}
           rel="noopener noreferrer"
           target="_blank"
+          tabIndex="0"
+          aria-label="Link towards Arc'teryx website - Lien vers site arc'teryx"
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              e.stopPropagation();
+              window.open(url);
+            }
+          }}
         >
           <CompanyLogo
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1610832013/Business%20website/Work/arcteryx_nzovbc.png"

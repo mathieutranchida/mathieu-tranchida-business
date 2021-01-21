@@ -14,9 +14,16 @@ const Schools = () => {
       <Wrapper>
         <SchoolWrapper
           href="https://concordiabootcamps.ca/"
-          aria-label="Link towards Concordia Bootcamps website / Lien vers Concordia Bootcamps site internet"
           rel="noopener noreferrer"
           target="_blank"
+          tabIndex="0"
+          aria-label="Link towards Concordia Bootcamps website / Lien vers Concordia Bootcamps site internet"
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              e.stopPropagation();
+              window.open("https://concordiabootcamps.ca/");
+            }
+          }}
         >
           <SchoolLogo
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1610748222/Business website/Logo/Université_Concordia__logo_.svg__woaohu.png"
@@ -31,9 +38,16 @@ const Schools = () => {
         </SchoolWrapper>
         <SchoolWrapper
           href="https://www.concordia.ca/jmsb.html"
-          aria-label="Link towards John Molson School of Business website / Lien vers John Molson School of Business site internet"
           rel="noopener noreferrer"
           target="_blank"
+          tabIndex="0"
+          aria-label="Link towards John Molson School of Business website / Lien vers John Molson School of Business site internet"
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              e.stopPropagation();
+              window.open("https://www.concordia.ca/jmsb.html");
+            }
+          }}
         >
           <SchoolLogo
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1610749899/Business%20website/Logo/JMSB-1030x579_u8ds9b.png"
@@ -49,9 +63,16 @@ const Schools = () => {
         </SchoolWrapper>
         <SchoolWrapper
           href="https://lfz.ch/"
-          aria-label="Link towards Lycée Français de Zurich website / Lien vers Lycée Français de Zurich site internet"
           rel="noopener noreferrer"
           target="_blank"
+          tabIndex="0"
+          aria-label="Link towards Lycée Français de Zurich website / Lien vers Lycée Français de Zurich site internet"
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              e.stopPropagation();
+              window.open("https://lfz.ch/");
+            }
+          }}
         >
           <SchoolLogo
             src="https://res.cloudinary.com/dldqebddc/image/upload/v1610750373/Business website/Logo/cropped-new-logo-lfz_ywtooo.png"
