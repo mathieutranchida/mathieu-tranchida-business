@@ -77,16 +77,16 @@ const Slash = styled.div`
       transform: translate3d(6em, 0, 0);
     }
 
-    55% {
+    25% {
       opacity: 0;
       transform: translate3d(6em, 0, 0);
     }
 
-    65% {
+    35% {
       opacity: 1;
     }
 
-    70% {
+    40% {
       transform: translate3d(0, 0, 0);
     }
   }
@@ -119,10 +119,10 @@ const IntroHeader = styled.div`
     0% {
       transform: translateX(-150%);
     }
-    65% {
+    30% {
       transform: translateX(-150%);
     }
-    100% {
+    70% {
       transform: translateX(0%);
     }
   }
