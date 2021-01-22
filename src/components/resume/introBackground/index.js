@@ -69,7 +69,7 @@ const Slash = styled.div`
   font-weight: 800;
   color: white;
   text-shadow: 0px 0px 7px black;
-  animation: 4s ease-out animation-slash;
+  animation: 6s ease-out animation-slash;
 
   @keyframes animation-slash {
     0% {
@@ -77,16 +77,16 @@ const Slash = styled.div`
       transform: translate3d(6em, 0, 0);
     }
 
-    25% {
+    55% {
       opacity: 0;
       transform: translate3d(6em, 0, 0);
     }
 
-    45% {
+    65% {
       opacity: 1;
     }
 
-    50% {
+    70% {
       transform: translate3d(0, 0, 0);
     }
   }
@@ -113,13 +113,13 @@ const IntroHeader = styled.div`
   font-weight: 700;
   color: white;
   padding-left: 25px;
-  animation: 2.8s ease-in-out animation-text;
+  animation: 5.5s ease-in-out animation-text;
   z-index: -1;
   @keyframes animation-text {
     0% {
       transform: translateX(-150%);
     }
-    45% {
+    65% {
       transform: translateX(-150%);
     }
     100% {
