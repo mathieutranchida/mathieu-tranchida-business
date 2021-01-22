@@ -2,6 +2,8 @@ import React, { useRef, useEffect } from "react";
 import styled from "styled-components";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useSelector, useDispatch } from "react-redux";
+import { updateLoadState } from "../../redux/actions";
 
 import TopHeader from "./header/topHeader/TopHeader";
 import ScrollHeader from "./header/scrollHeader/ScrollHeader";
@@ -16,6 +18,10 @@ import Contact from "./contact/Contact";
 gsap.registerPlugin(ScrollTrigger);
 
 const Index = () => {
+  const loadState = useSelector((state) => state.firstLoadReducer.firstLoad);
+  const dispatch = useDispatch();
+
+  let webPage = useRef(null);
   let revealRefs = useRef([]);
   revealRefs.current = [];
 
@@ -24,6 +30,20 @@ const Index = () => {
       revealRefs.current.push(el);
     }
   };
+
+  useEffect(() => {
+    if (loadState) {
+      gsap.set(webPage, {
+        opacity: 0,
+      });
+      gsap.to(webPage, {
+        duration: 2,
+        opacity: 1,
+        ease: "power3.inOut",
+      });
+      dispatch(updateLoadState(false));
+    }
+  });
 
   useEffect(() => {
     revealRefs.current.forEach((el, index) => {
@@ -47,7 +67,11 @@ const Index = () => {
 
   return (
     <>
-      <Wrapper>
+      <Wrapper
+        ref={(e) => {
+          webPage = e;
+        }}
+      >
         <TopHeader />
         <ScrollHeader />
         <IntroBackground />
