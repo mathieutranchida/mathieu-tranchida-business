@@ -189,7 +189,7 @@ export const fr = {
         date: "Automne 2020",
       },
       {
-        program: "Baccalauréat en commerce - Gestion et commerce international",
+        program: "Bachelor de commerce - Gestion et commerce international",
         schoolName: ["Université Concordia", "John Molson School of Business"],
         date: "Automne 2016 - Hiver 2020",
       },
