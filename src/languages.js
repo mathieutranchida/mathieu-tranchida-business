@@ -134,7 +134,7 @@ export const en = {
         description: [
           "The Concordia Ski & Snowboard Club is one of the most active clubs on campus with more than 500 active members and +20 events every year.",
           "I joined the club in 2017 as the VP of Marketing. My role was to come up with marketing strategies to sell tickets and produce the content for each trip.",
-          "After a year in the position of VP Marketing, I was elected President of the club. My responsibilities included managing a team of six executives, overseeing finances, marketing, operations, and sponsorships. In the 18/19 season, along with my team, I planned and ran over 20 events, including 10-day trips and two weekenders, generating over $90,000 in sales revenue. We worked with external companies and sponsors such as Red Bull and Orage. Leadership and teamwork are key takeaways from this experience.",
+          "After a year in the position of VP Marketing, I was elected President of the club. My responsibilities included managing a team of six executives, overseeing finances, marketing, operations, and sponsorships. In the 18/19 season, along with my team, I planned and ran over 20 events, including 10 one-day trips and two weekenders, generating over $90,000 in sales revenue. We worked with external companies and sponsors such as Red Bull and Orage. Leadership and teamwork are key takeaways from this experience.",
         ],
       },
     ],
@@ -297,7 +297,7 @@ export const fr = {
         description: [
           "Le Club de ski et de snowboard Concordia est l'un des clubs les plus actifs du campus avec plus de 500 membres actifs et +20 événements chaque année.",
           "J'ai rejoint le club en 2017 en tant que vice-président du marketing. Mon rôle était de proposer des stratégies marketing pour vendre les billets et produire le contenu de chaque voyage.",
-          "Après un an au poste de vice-président du marketing, j'ai été élu président du club. Mes responsabilités comprenaient la gestion d'une équipe de six personnes, ainsi que la supervision des finances, du marketing, des opérations et des commandites. Au cours de la saison 18/19, avec le support de mon équipe, j'ai planifié et organisé plus de 20 événements, dont des voyages de 10 jours et deux week-ends, générant plus de 90 000 $ de chiffre d'affaires. Nous avons travaillé avec des sociétés externes et des sponsors tels que Red Bull et Orage. Le leadership et le travail d'équipe sont les principaux enseignements de cette expérience.",
+          "Après un an au poste de vice-président du marketing, j'ai été élu président du club. Mes responsabilités comprenaient la gestion d'une équipe de six personnes, ainsi que la supervision des finances, du marketing, des opérations et des commandites. Au cours de la saison 18/19, avec le support de mon équipe, j'ai planifié et organisé plus de 20 événements, dont des 10 voyages de une journée et deux week-ends, générant plus de 90 000 $ de chiffre d'affaires. Nous avons travaillé avec des sociétés externes et des sponsors tels que Red Bull et Orage. Le leadership et le travail d'équipe sont les principaux enseignements de cette expérience.",
         ],
       },
     ],
