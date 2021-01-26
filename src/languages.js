@@ -62,7 +62,7 @@ export const en = {
         description: [
           "Created a fully responsive e-commerce application with a functioning store, cart, payment, order confirmation, and admin portal features.",
           "The store offers a variety of images that can be bought in different sizes and types of paper. Each cart is saved on a MongoDB database and can be retrieved using a unique ID assigned to each user's local storage. The payment system was created using Stripe. On payment, the user is redirected to the order confirmation page if the payment succeeds or to an error page if the payment fails.",
-          "The admin portal gives the admin the possibility to create, update, and delete products. The portal is protected with a login portal that uses Bcrypt and Json Web Token to secure the user's authentication. If logged out, the admin can't access protected routes and perform protected actions. While logged in, the user can see every order made to the website and modify their status (received, processing, fulfilled, etc.).",
+          "The administrator portal gives the admin the possibility to create, update, and delete products. The portal is protected with a login portal that uses Bcrypt and Json Web Token to secure the user's authentication. If logged out, the admin can't access protected routes and perform protected actions. While logged in, the user can see every order made to the website and modify their status (received, processing, fulfilled, etc.).",
         ],
       },
       {
@@ -133,8 +133,8 @@ export const en = {
         jobTitle: "President & VP Marketing | 2017 - 2019 | Montreal, Canada",
         description: [
           "The Concordia Ski & Snowboard Club is one of the most active clubs on campus with more than 500 active members and +20 events every year.",
-          "I joined the club in 2017 as the VP of Marketing. My role was to come up with marketing strategies to sell tickets and produce the content for each trip.",
-          "After a year in the position of VP Marketing, I was elected President of the club. My responsibilities included managing a team of six executives, overseeing finances, marketing, operations, and sponsorships. In the 18/19 season, along with my team, I planned and ran over 20 events, including 10 one-day trips and two weekenders, generating over $90,000 in sales revenue. We worked with external companies and sponsors such as Red Bull and Orage. Leadership and teamwork are key takeaways from this experience.",
+          "I joined the club in 2017 as the VP Marketing. My role was to come up with marketing strategies to sell tickets and produce the content for each trip.",
+          "After a year in the position of VP Marketing, I was elected President of the club. My responsibilities included managing a team of six people, overseeing finances, marketing, operations, and sponsorships. In the 18/19 season, along with my team, I planned and ran over 20 events, including 10 one-day trips and two weekenders, generating over $90,000 in sales revenue. We worked with external companies and sponsors such as Red Bull and Orage. Leadership and teamwork are key takeaways from this experience.",
         ],
       },
     ],
